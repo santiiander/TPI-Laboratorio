@@ -309,4 +309,4 @@ while menu == 0:
         if element == 117:
             print("teneso")
         if element == 118:
-            print("organeson kkck")
+            print("organeson")
