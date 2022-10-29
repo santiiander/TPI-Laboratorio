@@ -60,11 +60,15 @@ while menu == 0:
                  del numero
                  menu = int(input())
                  break
+              primerdigito = int(str(numero)[0])
 
-              if vidas==2:
+              if vidas==2 and digits==1:
+                  print("Lo siento, no puedo revelarte la cantidad de digitos")
+                  print("Pero puedo decirte que tu numero se encuentra entre el 0 y el 9")
+
+              if vidas==2 and digits>1:
                   print("Veo que ya solo te quedan 2 intentos D:")
                   print("Voy a darte una pista...")
-                  primerdigito=int(str(numero)[0])
                   print("El numero empieza con",primerdigito)
 
               if vidas==0:
