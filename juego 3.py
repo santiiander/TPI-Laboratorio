@@ -7,7 +7,7 @@ while menu == 3:
         while element == 1:
             element = "hidrogeno"
             print("es un no metal")
-            guess=str(input())
+            guess=str(input()) #validar en minusculas
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
                 menu = int(input())
@@ -17,7 +17,7 @@ while menu == 3:
             while 0<vidas<3:
                 vidas=vidas-1
                 guess=str(input())
-                if guess != element:
+                if guess != element: #arreglar que no salga cuando se pierde
                     print("posee un solo nivel de energia")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
