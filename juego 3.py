@@ -9,7 +9,7 @@ while menu == 3:
             print("es un no metal")
             guess=str(input()) #validar en minusculas
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas-1
@@ -20,20 +20,20 @@ while menu == 3:
                 if guess != element: #arreglar que no salga cuando se pierde
                     print("posee un solo nivel de energia")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el hidrogeno")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 2:
             element = "helio"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -44,20 +44,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el helio")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 3:
             element = "litio"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -68,20 +68,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el litio")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 4:
             element = "berilio"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -92,20 +92,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el berilio")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 5:
             element = "boro"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -116,20 +116,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el boro")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 6:
             element = "carbono"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -140,19 +140,19 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el carbono")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
         while element == 7:
             element = "nitrogeno"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -163,20 +163,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el nitrogeno")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 8:
             element = "oxigeno"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -187,20 +187,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el oxigeno")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 9:
             element = "fluor"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -211,20 +211,20 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el fluor")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 10:
             element = "neon"
             print("")
             guess = str(input())
             if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
             elif guess != element:
                 vidas = vidas - 1
@@ -235,13 +235,13 @@ while menu == 3:
                 if guess != element:
                     print("")
                 if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
                     print("el elemento era el neon")
-                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
         while element == 11:
             print("sodio")
