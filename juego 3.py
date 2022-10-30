@@ -1,240 +1,999 @@
 import random
 menu=3
-if menu == 3:
-        element = random.randint(1, 118)
-        if element == 1:
-            print("hidrogeno")
-        if element == 2:
-            print("helio")
-        if element == 3:
-            print("litio")
-        if element == 4:
-            print("berilio")
-        if element == 5:
-            print("boro")
-        if element == 6:
-            print("carbono")
-        if element == 7:
-            print("nitrogeno")
-        if element == 8:
-            print("oxigeno")
-        if element == 9:
-            print("fluor")
-        if element == 10:
-            print("neon")
-        if element == 11:
+while menu == 3:
+        print("usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
+        element = random.randint(1, 1)
+        vidas=3
+        while element == 1:
+            element = "hidrogeno"
+            print("es un no metal")
+            guess=str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas-1
+                print("se encuentra en el bloque S")
+            while 0<vidas<3:
+                vidas=vidas-1
+                guess=str(input())
+                if guess != element:
+                    print("posee un solo nivel de energia")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el hidrogeno")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 2:
+            element = "helio"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el helio")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 3:
+            element = "litio"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el litio")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 4:
+            element = "berilio"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el berilio")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 5:
+            element = "boro"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el boro")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 6:
+            element = "carbono"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el carbono")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+        while element == 7:
+            element = "nitrogeno"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el nitrogeno")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 8:
+            element = "oxigeno"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el oxigeno")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 9:
+            element = "fluor"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el fluor")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 10:
+            element = "neon"
+            print("")
+            guess = str(input())
+            if guess == element:
+                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                menu = int(input())
+            elif guess != element:
+                vidas = vidas - 1
+                print("")
+            while 0 < vidas < 3:
+                vidas = vidas - 1
+                guess = str(input())
+                if guess != element:
+                    print("")
+                if guess == element:
+                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 1")
+                    menu = int(input())
+                    break
+                if vidas == 0:
+                    print("te quedaste sin intentos, a estudiar")
+                    print("el elemento era el neon")
+                    menu = int(input("presione 1 para regresar al menu o 3 para reintentar"))
+
+        while element == 11:
             print("sodio")
-        if element == 12:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 12:
             print("magnesio")
-        if element == 13:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 13:
             print("aluminio")
-        if element == 14:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 14:
             print("silicio")
-        if element == 15:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 15:
             print("fosforo")
-        if element == 16:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 16:
             print("azufre")
-        if element == 17:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 17:
             print("cloro")
-        if element == 18:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 18:
             print("argon")
-        if element == 19:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 19:
             print("potasio")
-        if element == 20:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 20:
             print("calcio")
-        if element == 21:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 21:
             print("escandio")
-        if element == 22:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 22:
             print("titanio")
-        if element == 23:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 23:
             print("vanadio")
-        if element == 24:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 24:
             print("cromo")
-        if element == 25:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 25:
             print("manganeso")
-        if element == 26:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 26:
             print("hierro")
-        if element == 27:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 27:
             print("cobalto")
-        if element == 28:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 28:
             print("niquel")
-        if element == 29:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 29:
             print("cobre")
-        if element == 30:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 30:
             print("zinc")
-        if element == 31:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 31:
             print("galio")
-        if element == 32:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 32:
             print("germanio")
-        if element == 33:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 33:
             print("arsenico")
-        if element == 34:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 34:
             print("selenio")
-        if element == 35:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 35:
             print("bromo")
-        if element == 36:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 36:
             print("kripton")
-        if element == 37:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 37:
             print("rubidio")
-        if element == 38:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 38:
             print("estroncio")
-        if element == 39:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 39:
             print("itrio")
-        if element == 40:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 40:
             print("circonio")
-        if element == 41:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 41:
             print("niobio")
-        if element == 42:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 42:
             print("molibdeno")
-        if element == 43:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 43:
             print("tecnecio")
-        if element == 44:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 44:
             print("rutenio")
-        if element == 45:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 45:
             print("rodio")
-        if element == 46:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 46:
             print("paladio")
-        if element == 47:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 47:
             print("plata")
-        if element == 48:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 48:
             print("cadmio")
-        if element == 49:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 49:
             print("indio")
-        if element == 50:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 50:
             print("estaño")
-        if element == 51:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 51:
             print("antimonio")
-        if element == 52:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 52:
             print("telurio")
-        if element == 53:
+            print("")
+            print("")
+            print("")
+            print("")
+        while element == 53:
             print("yodo")
-        if element == 54:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 54:
             print("xenon")
-        if element == 55:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 55:
             print("cesio")
-        if element == 56:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 56:
             print("bario")
-        if element == 57:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 57:
             print("lantano")
-        if element == 58:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 58:
             print("cerio")
-        if element == 59:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 59:
             print("praseodimio")
-        if element == 60:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 60:
             print("neodimio")
-        if element == 61:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 61:
             print("prometio")
-        if element == 62:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 62:
             print("samario")
-        if element == 63:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 63:
             print("europio")
-        if element == 64:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 64:
             print("gadolinio")
-        if element == 65:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 65:
             print("terbio")
-        if element == 66:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 66:
             print("disprosio")
-        if element == 67:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 67:
             print("holmio")
-        if element == 68:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 68:
             print("erbio")
-        if element == 69:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 69:
             print("tulio")
-        if element == 70:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 70:
             print("iterbio")
-        if element == 71:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 71:
             print("lutecio")
-        if element == 72:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 72:
             print("hafnio")
-        if element == 73:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 73:
             print("tantalo")
-        if element == 74:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 74:
             print("wolframio")
-        if element == 75:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 75:
             print("renio")
-        if element == 76:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 76:
             print("osmio")
-        if element == 77:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 77:
             print("iridio")
-        if element == 78:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 78:
             print("platino")
-        if element == 79:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 79:
             print("oro")
-        if element == 80:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 80:
             print("mercurio")
-        if element == 81:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 81:
             print("talio")
-        if element == 82:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 82:
             print("plomo")
-        if element == 83:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 83:
             print("bismuto")
-        if element == 84:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 84:
             print("polonio")
-        if element == 85:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 85:
             print("astato")
-        if element == 86:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 86:
             print("radon")
-        if element == 87:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 87:
             print("francio")
-        if element == 88:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 88:
             print("radio")
-        if element == 89:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 89:
             print("actinio")
-        if element == 90:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 90:
             print("torio")
-        if element == 91:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 91:
             print("protactinio")
-        if element == 92:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 92:
             print("uranio")
-        if element == 93:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 93:
             print("neptunio")
-        if element == 94:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 94:
             print("plutonio")
-        if element == 95:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 95:
             print("americio")
-        if element == 96:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 96:
             print("curio")
-        if element == 97:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 97:
             print("berkelio")
-        if element == 98:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 98:
             print("californio")
-        if element == 99:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 99:
             print("einstenio")
-        if element == 100:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 100:
             print("fermio")
-        if element == 101:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 101:
             print("mendelevio")
-        if element == 102:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 102:
             print("nobelio")
-        if element == 103:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 103:
             print("lawrencio")
-        if element == 104:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 104:
             print("rutherfordio")
-        if element == 105:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 105:
             print("dubnio")
-        if element == 106:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 106:
             print("seaborgio")
-        if element == 107:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 107:
             print("bohrio")
-        if element == 108:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 108:
             print("hasio")
-        if element == 109:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 109:
             print("meitnerio")
-        if element == 110:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 110:
             print("darmstatio")
-        if element == 111:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 111:
             print("roentgenio")
-        if element == 112:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 112:
             print("copernicio")
-        if element == 113:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 113:
             print("nihonio")
-        if element == 114:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 114:
             print("flerevio")
-        if element == 115:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 115:
             print("moscovio")
-        if element == 116:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 116:
             print("livermorio")
-        if element == 117:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 117:
             print("teneso")
-        if element == 118:
+            print("")
+            print("")
+            print("")
+            print("")
+
+        while element == 118:
             print("organeson")
+            print("")
+            print("")
+            print("")
+            print("")
