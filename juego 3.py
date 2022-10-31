@@ -7,7 +7,7 @@ while menu == 3:
         while element == 1:
             element = "hidrogeno"
             print("es un no metal")
-            guess=str(input()) #validar en minusculas
+            guess=str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -16,9 +16,10 @@ while menu == 3:
                 print("se encuentra en el bloque S")
             while 0<vidas<3:
                 vidas=vidas-1
-                guess=str(input())
-                if guess != element: #arreglar que no salga cuando se pierde
-                    print("posee un solo nivel de energia")
+                guess=str.lower(input())
+                if vidas > 0:
+                    if guess != element: #arreglar que no salga cuando se pierde
+                        print("posee un solo nivel de energia")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -31,7 +32,7 @@ while menu == 3:
         while element == 2:
             element = "helio"
             print("")
-            guess = str(input())
+            guess=str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -40,9 +41,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess=str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -55,7 +57,7 @@ while menu == 3:
         while element == 3:
             element = "litio"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -64,9 +66,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -79,7 +82,7 @@ while menu == 3:
         while element == 4:
             element = "berilio"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -88,9 +91,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -103,7 +107,7 @@ while menu == 3:
         while element == 5:
             element = "boro"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -112,9 +116,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -127,7 +132,7 @@ while menu == 3:
         while element == 6:
             element = "carbono"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -136,9 +141,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -150,7 +156,7 @@ while menu == 3:
         while element == 7:
             element = "nitrogeno"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -159,9 +165,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -174,7 +181,7 @@ while menu == 3:
         while element == 8:
             element = "oxigeno"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -183,9 +190,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -198,7 +206,7 @@ while menu == 3:
         while element == 9:
             element = "fluor"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -207,9 +215,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
@@ -222,7 +231,7 @@ while menu == 3:
         while element == 10:
             element = "neon"
             print("")
-            guess = str(input())
+            guess = str.lower(input())
             if guess == element:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -231,9 +240,10 @@ while menu == 3:
                 print("")
             while 0 < vidas < 3:
                 vidas = vidas - 1
-                guess = str(input())
-                if guess != element:
-                    print("")
+                guess = str.lower(input())
+                if vidas > 0:
+                    if guess != element:
+                        print("")
                 if guess == element:
                     print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                     menu = int(input())
