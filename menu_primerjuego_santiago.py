@@ -1,6 +1,6 @@
 import math
 import random
-
+multiplo=5
 menu = 0
 while menu == 0:
     print("Hola!, Bienvenido.")
@@ -35,16 +35,16 @@ while menu == 0:
         print("   \_\/_/\       /_\_\/  ")
         print("      \_\/       \_\/  ")
         print("Hay una probabilidad de que el invader te quite o agregue una vida!")
-
+        randominvader=random.randint(1,2)
 
         if inputnumero == 1:
             print("El número se generará aleatoriamente ")
             if dificultadjuego1 == 1:
-                numero = random.randint(0, 100)
+                numero = random.randint(0, 100) #Dificultad 1 = 7 vidas
             if dificultadjuego1 == 2:
-                numero = random.randint(0, 500)
+                numero = random.randint(0, 500) #Dificultad 2 = 6 vidas
             if dificultadjuego1 == 3:
-                numero = random.randint(0, 1000)
+                numero = random.randint(0, 1000) #Dificultad 3 = 5 vidas
             print(numero)  # borrar
 
         elif inputnumero == 0:
@@ -53,7 +53,7 @@ while menu == 0:
                 print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
             if dificultadjuego1 == 2 and numero > 500 or numero < 100:
                 print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
-            if dificultadjuego1 == 3 and numero < 1000:
+            if dificultadjuego1 == 3 and 500>numero>1000:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
             numero = int(input())
             # Agregamos la funcion para poder obtener los digitos del numero como ayuda
@@ -66,7 +66,7 @@ while menu == 0:
                 digits = 1
                 print("El numero tiene", digits, "digitos!")
 
-        if vidas <= 7 and vidas >= 5:
+        if vidas <= 7 and vidas >= 5: #arreglar error de dificultad y estat linea
             print("Intentemoslo")
             numentrada = int(input())
 
@@ -78,10 +78,10 @@ while menu == 0:
             menu = int(input())
         else:
             if numentrada != numero:
-                vidas = vidas - 1
+                vidas-=1
 
         while vidas > 0 and vidas < 7:
-            vidas = vidas - 1
+            vidas-=1
             print("Oh, una vida menos :( , prueba de nuevo")
             numentrada = int(input())
 
@@ -94,10 +94,22 @@ while menu == 0:
                 break
             primerdigito = int(str(numero)[0])
 
+            if vidas==3:
+                if randominvader==1:
+                    vidas-=1
+                    print("El invader se metió en el código y te robó 1 vida! 💔 ")
+                if randominvader==2:
+                    vidas+=1
+                    print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
+
+
             if vidas == 5 and dificultadjuego1 == 3:
                 print("Ya perdiste 2 vidas!")
                 print("Voy a ayudarte un poco...")
-                print()
+                if numero % multiplo == 0:
+                    print("Es multiplo de 5")
+                else:
+                    print("No es multiplo de 5")
 
             if vidas == 2 and digits == 1:
                 print("Lo siento, no puedo revelarte la cantidad de digitos")
