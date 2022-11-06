@@ -48,13 +48,14 @@ else:
 			tuhp=5000
 			hpmax=7000
 print(ver_dragon())
+
+
 while True:
 	print()
 	print()
 	accion = int(input("que decea hacer selecione atacar(1) o defender(2)"))
 	if accion == 1:
 		#atacar
-		while True:
 			print()
 			print()
 			lansar= int(input("lansar dado con (1)"))
@@ -127,7 +128,8 @@ while True:
 
 			if hp <= 0: break
 	elif accion == 2:
-		while True:
+		#defender
+			danio=0
 			print()
 			print()
 			lansar = int(input("lansar dado con (1)"))
