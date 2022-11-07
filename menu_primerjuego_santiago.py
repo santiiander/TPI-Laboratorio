@@ -3,7 +3,6 @@ import random
 
 menu = 0
 while menu == 0:
-    probabilidadinvader = random.randint(1, 2)
 
     print("Hola!, Bienvenido.")
     print("Por favor, seleccione el número correspondiente al juego o actividad")
@@ -14,6 +13,8 @@ while menu == 0:
     menu = int(input())
 
     while menu == 1:
+        contadorproblema = 0
+        probabilidadinvader = random.randint(1, 2)
         print("Bienvenido a Adivina el número")
         dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
 
@@ -65,6 +66,7 @@ while menu == 0:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
             # Agregamos la funcion para poder obtener los digitos del numero como ayuda
 
+
         if numero > 0:
             digits = int(math.log10(numero)) + 1
             print("El numero tiene", digits, "digitos!")
@@ -101,8 +103,8 @@ while menu == 0:
                 break
             primerdigito = int(str(numero)[0])
 
-            while vidas == 3:
-                if vidas == 3:
+            while vidas == 3 and contadorproblema==0:
+                if vidas == 3 and contadorproblema==0:
                     if probabilidadinvader == 1:
 
                      if randominvader == 1:
@@ -112,6 +114,7 @@ while menu == 0:
 
                      else:
                         vidas += 1
+                        contadorproblema+=1
                         print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
                 break  # arreglar este break
 
