@@ -1,7 +1,10 @@
 import math
 import random
+
 menu = 0
 while menu == 0:
+    probabilidadinvader = random.randint(1, 2)
+
     print("Hola!, Bienvenido.")
     print("Por favor, seleccione el número correspondiente al juego o actividad")
     print("1) Adivina el numero")
@@ -16,30 +19,30 @@ while menu == 0:
 
         if dificultadjuego1 == 1:
             vidas = 7
-        elif dificultadjuego1 == 2: #error en todas las dificultades, pide input 2 veces sobre el numero a adivinar
+        elif dificultadjuego1 == 2:
             vidas = 6
         elif dificultadjuego1 == 3:
             vidas = 5
 
         print("Tendrás que adivinar el numero generado aleatoriamente, o ingresado por el usuario ")
-        print("Tienes",vidas, "vidas")  # borrar
-        inputnumero = int(input("Por favor, ingrese 1 si desea que el numero sea aleatorio"
-                                " 0 si desea ingresarlo "))
+        print("Tienes", vidas, "vidas")  # borrar
 
-        print("Oh no!, un invader se metió en el programa ;)")
+        inputnumero = int(input("Por favor, ingrese 1 si desea que el numero sea aleatorio, 0 si desea ingresarlo "))
+        if probabilidadinvader == 1:
+            print("Oh no!, un invader se metió en el programa ;)")
 
-        print("      ____       ")
-        print('     /___/\_                   ')
-        print("    _\   \/_/\__                ")
-        print("  __\       \/_/\               ")
-        print("  \   __    __ \ \               ")
-        print(" __\  \_\   \_\ \ \   __      ")
-        print("\_\/_\__\/\__\/\__\/_\_\/   ")
-        print("   \_\/_/\       /_\_\/  ")
-        print("      \_\/       \_\/  ")
+            print("      ____       ")
+            print('     /___/\_                   ')
+            print("    _\   \/_/\__                ")
+            print("  __\       \/_/\               ")
+            print("  \   __    __ \ \               ")
+            print(" __\  \_\   \_\ \ \   __      ")
+            print("\_\/_\__\/\__\/\__\/_\_\/   ")
+            print("   \_\/_/\       /_\_\/  ")
+            print("      \_\/       \_\/  ")
 
-        print("Hay una probabilidad de que el invader te quite o agregue una vida!")
-        randominvader = random.randint(1, 2)
+            print("Hay una probabilidad de que el invader te quite o agregue una vida!")
+            randominvader = random.randint(1, 2)
 
         if inputnumero == 1:
             print("El número se generará aleatoriamente ")
@@ -56,9 +59,9 @@ while menu == 0:
             numero = int(input("El numero será elegido por el otro jugador: "))
             if dificultadjuego1 == 1 and numero > 100:
                 print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
-            if dificultadjuego1 == 2 and 100>numero<500:
+            if dificultadjuego1 == 2 and 100 > numero < 500:
                 print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
-            if dificultadjuego1 == 3 and 500>numero> 1000:
+            if dificultadjuego1 == 3 and 500 > numero > 1000:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
             # Agregamos la funcion para poder obtener los digitos del numero como ayuda
 
@@ -70,7 +73,7 @@ while menu == 0:
                 digits = 1
                 print("El numero tiene", digits, "digitos!")
 
-        if vidas !=2:  # arreglar error de dificultad y estat linea
+        if vidas != 2:  # arreglar error de dificultad y estat linea
             print("Intentemoslo")
             numentrada = int(input())
 
@@ -99,16 +102,18 @@ while menu == 0:
             primerdigito = int(str(numero)[0])
 
             while vidas == 3:
-              if vidas == 3:
-                 if randominvader == 1:
-                    vidas -= 1
-                    print("El invader se metió en el código y te robó 1 vida! 💔 ") #problema, se repite linea siempre
+                if vidas == 3:
+                    if probabilidadinvader == 1:
 
-                 else:
-                    vidas += 1
-                    print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
-              break #arreglar este break
+                     if randominvader == 1:
+                        vidas -= 1
+                        print(
+                            "El invader se metió en el código y te robó 1 vida! 💔 ")  # problema, se repite linea siempre
 
+                     else:
+                        vidas += 1
+                        print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
+                break  # arreglar este break
 
             if vidas == 5 and dificultadjuego1 == 3:
                 print("Ya perdiste 2 vidas!")
