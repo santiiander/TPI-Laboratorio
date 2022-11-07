@@ -116,7 +116,6 @@ while menu == 0:
                         vidas += 1
                         contadorproblema+=1
                         print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
-                break  # arreglar este break
 
             if vidas == 5 and dificultadjuego1 == 3:
                 print("Ya perdiste 2 vidas!")
