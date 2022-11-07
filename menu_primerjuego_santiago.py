@@ -56,7 +56,6 @@ while menu == 0:
                 print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
             if dificultadjuego1 == 3 and 500 > numero > 1000:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
-            numero = int(input())
             # Agregamos la funcion para poder obtener los digitos del numero como ayuda
 
         if numero > 0:
