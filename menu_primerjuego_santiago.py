@@ -1,7 +1,5 @@
 import math
 import random
-
-multiplo = 5
 menu = 0
 while menu == 0:
     print("Hola!, Bienvenido.")
@@ -15,17 +13,21 @@ while menu == 0:
     while menu == 1:
         print("Bienvenido a Adivina el número")
         dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
+
         if dificultadjuego1 == 1:
             vidas = 7
-        if dificultadjuego1 == 2:
+        elif dificultadjuego1 == 2: #error en todas las dificultades, pide input 2 veces sobre el numero a adivinar
             vidas = 6
-        if dificultadjuego1 == 3:
+        elif dificultadjuego1 == 3:
             vidas = 5
+
         print("Tendrás que adivinar el numero generado aleatoriamente, o ingresado por el usuario ")
         print("Tienes",vidas, "vidas")  # borrar
         inputnumero = int(input("Por favor, ingrese 1 si desea que el numero sea aleatorio"
                                 " 0 si desea ingresarlo "))
+
         print("Oh no!, un invader se metió en el programa ;)")
+
         print("      ____       ")
         print('     /___/\_                   ')
         print("    _\   \/_/\__                ")
@@ -35,6 +37,7 @@ while menu == 0:
         print("\_\/_\__\/\__\/\__\/_\_\/   ")
         print("   \_\/_/\       /_\_\/  ")
         print("      \_\/       \_\/  ")
+
         print("Hay una probabilidad de que el invader te quite o agregue una vida!")
         randominvader = random.randint(1, 2)
 
@@ -46,15 +49,16 @@ while menu == 0:
                 numero = random.randint(0, 500)  # Dificultad 2 = 6 vidas
             if dificultadjuego1 == 3:
                 numero = random.randint(0, 1000)  # Dificultad 3 = 5 vidas
+
             print(numero)  # borrar
 
-        elif inputnumero == 0:
-            numero = int(input("El numero será elegido por el otro jugador"))
+        else:
+            numero = int(input("El numero será elegido por el otro jugador: "))
             if dificultadjuego1 == 1 and numero > 100:
                 print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
-            if dificultadjuego1 == 2 and numero > 500 or numero < 100:
+            if dificultadjuego1 == 2 and 100>numero<500:
                 print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
-            if dificultadjuego1 == 3 and 500 > numero > 1000:
+            if dificultadjuego1 == 3 and 500>numero> 1000:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
             # Agregamos la funcion para poder obtener los digitos del numero como ayuda
 
@@ -66,7 +70,7 @@ while menu == 0:
                 digits = 1
                 print("El numero tiene", digits, "digitos!")
 
-        if vidas <= 7 and vidas >= 5:  # arreglar error de dificultad y estat linea
+        if vidas !=2:  # arreglar error de dificultad y estat linea
             print("Intentemoslo")
             numentrada = int(input())
 
@@ -94,21 +98,22 @@ while menu == 0:
                 break
             primerdigito = int(str(numero)[0])
 
-            if vidas == 3:
-                while vidas==3:
+            while vidas == 3:
+              if vidas == 3:
                  if randominvader == 1:
                     vidas -= 1
-                    print("El invader se metió en el código y te robó 1 vida! 💔 ")
+                    print("El invader se metió en el código y te robó 1 vida! 💔 ") #problema, se repite linea siempre
+
                  else:
                     vidas += 1
                     print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
-                 break
+              break #arreglar este break
 
 
             if vidas == 5 and dificultadjuego1 == 3:
                 print("Ya perdiste 2 vidas!")
                 print("Voy a ayudarte un poco...")
-                if numero % multiplo == 0:
+                if numero % 5 == 0:
                     print("Es multiplo de 5")
                 else:
                     print("No es multiplo de 5")
