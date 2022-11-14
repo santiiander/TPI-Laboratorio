@@ -1,4 +1,4 @@
-print("Bienvenidos a Trivia Sports")
+print("Bienvenidos a Trivia Sports Mundial")
 print("¿Capaz de lograr el maximo puntaje? Cada respuesta correcta son 10 puntos...Comenzemos")
 print("----------primera pregunta----------")
 print("¿Que seleccion de futbol gano el primer mundial en 1930?")
@@ -184,5 +184,6 @@ rtaT = (rtaC1+rtaC2+rtaC3+rtaC4+rtaC5+rtaC6+rtaC7+rtaC8+rtaC9+rtaC10)
 print("hemos finalizado la trivia y su puntaje es de:" ,rtaT, "puntos")
 if rtaT == 100:
     print("llegaste al puntaje maximo, felicitaciones")
+
 
 
