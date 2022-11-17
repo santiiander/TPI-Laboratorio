@@ -113,7 +113,7 @@ while dificultad == 1:
     else:
         print("respuesta incorrecta")
         rtaC6 = 0
-    print("----------septima pregunta----------")
+    print("----------septima y ultima pregunta----------")
     print("¿Recuerdas dónde se jugó la Copa del Mundial del año 2010?")
     seleccion1 = str("Italia")
     seleccion2 = str("Sudafrica")
@@ -131,6 +131,7 @@ while dificultad == 1:
     else:
         print("respuesta incorrecta")
         rtaC7 = 0
+    break
     rtaT = (rtaC1 + rtaC2 + rtaC3 + rtaC4 + rtaC5 + rtaC6 + rtaC7)
     print("hemos finalizado la trivia y su puntaje es de:", rtaT, "puntos")
     if rtaT == 70:
@@ -244,7 +245,7 @@ while dificultad == 2:
     else:
         print("respuesta incorrecta")
         rtaC6 = 0
-    print("----------septima pregunta----------")
+    print("----------septima y ultima pregunta----------")
     print("¿Dónde se disputó la Copa Mundial de 1998?")
     seleccion1 = str("Italia")
     seleccion2 = str("Francia")
@@ -266,6 +267,7 @@ while dificultad == 2:
     print("hemos finalizado la trivia y su puntaje es de:", rtaT, "puntos")
     if rtaT == 70:
         print("llegaste al puntaje maximo, felicitaciones")
+    break
 while dificultad == 3:
     print("----------primera pregunta----------")
     print("Que país ha participado mas veces en la copa del mundo?")
@@ -411,6 +413,7 @@ while dificultad == 3:
     else:
         print("respuesta incorrecta")
         rtaC8 = 0
+    break
     rtaT = (rtaC1 + rtaC2 + rtaC3 + rtaC4 + rtaC5 + rtaC6 + rtaC7)
     print("hemos finalizado la trivia y su puntaje es de:", rtaT, "puntos")
     if rtaT == 70:
