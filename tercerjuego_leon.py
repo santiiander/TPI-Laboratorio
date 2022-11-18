@@ -1,287 +1,400 @@
 import random
 menu=3
-while menu == 3:
-        print("usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
-        element = random.randint(1, 1)
-        vidas=3
-        while element == 1:
-            element = "hidrogeno"
-            print("es un no metal")
-            guess=str.lower(input())
-            if guess == element:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
-                menu = int(input())
-            elif guess != element:
-                vidas = vidas-1
-                print("se encuentra en el bloque S")
-            while 0<vidas<3:
-                vidas=vidas-1
-                guess=str.lower(input())
-                if vidas > 0:
-                    if guess != element:
-                        print("posee un solo nivel de energia")
-                if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
-                    menu = int(input())
-                    break
-                if vidas == 0:
-                    print("te quedaste sin intentos, a estudiar")
-                    print("el elemento era el hidrogeno")
-                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
 
-        while element == 2:
-            element = "helio"
-            print("")
-            guess=str.lower(input())
-            if guess == element:
+while menu == 3:
+    def nometal(): print("es un no metal")
+    def metal(): print("es un metal")
+    def bloqueP(): print("se encuentra en el bloque P")
+    def bloqueS(): print("se encuentra en el bloque S")
+    def bloqueD(): print("se encuentra en el bloque D")
+    def bloqueF(): print("se encuentra en el bloque F")
+    def numero(): print("tiene un numero atomico de 1 digito")
+    def intentos(atomo):
+        vidas=3
+        guess = str.lower(input())
+        if guess == atomo:
+            print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
+            menu = int(input())
+        elif guess != atomo:
+            vidas = vidas - 1
+            if 0<element<5 or 10<element<13 or 18<element<21 or 36<element<39 or 54<element<57 or 86<element<89:
+                bloqueS()
+            if 4<element<11 or 12<element<19 or 30<element<37 or 48<element<55 or 80<element<87 or 112<element<119:
+                bloqueP()
+            if 20<element<31 or 38<element<49 or 70<element<81 or 103<element<113:
+                bloqueD()
+            if 56<element<71 or 88<element<103:
+                bloqueF()
+        while 0 < vidas < 3:
+            vidas = vidas - 1
+            guess = str.lower(input())
+            if vidas > 0:
+                if guess != atomo:
+                    if 0<element<10:
+                        numero()
+
+            if guess == atomo:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
-            elif guess != element:
-                vidas = vidas - 1
-                print("")
-            while 0 < vidas < 3:
-                vidas = vidas - 1
-                guess=str.lower(input())
-                if vidas > 0:
-                    if guess != element:
-                        print("")
-                if guess == element:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
-                    menu = int(input())
-                    break
-                if vidas == 0:
-                    print("te quedaste sin intentos, a estudiar")
-                    print("el elemento era el helio")
-                    menu = int(input("presione 0 para regresar al menu o 3 para reintentar"))
-        while element == 3:
-            element = "litio"
-        while element == 4:
-            element = "berilio"
-        while element == 5:
-            element = "boro"
-        while element == 6:
-            element = "carbono"
-        while element == 7:
-            element = "nitrogeno"
-        while element == 8:
-            element = "oxigeno"
-        while element == 9:
-            element = "fluor"
-        while element == 10:
-            element = "neon"
-        while element == 11:
-            print("sodio")
-        while element == 12:
-            print("magnesio")
-        while element == 13:
-            print("aluminio")
-        while element == 14:
-            print("silicio")
-        while element == 15:
-            print("fosforo")
-        while element == 16:
-            print("azufre")
-        while element == 17:
-            print("cloro")
-        while element == 18:
-            print("argon")
-        while element == 19:
-            print("potasio")
-        while element == 20:
-            print("calcio")
-        while element == 21:
-            print("escandio")
-        while element == 22:
-            print("titanio")
-        while element == 23:
-            print("vanadio")
-        while element == 24:
-            print("cromo")
-        while element == 25:
-            print("manganeso")
-        while element == 26:
-            print("hierro")
-        while element == 27:
-            print("cobalto")
-        while element == 28:
-            print("niquel")
-        while element == 29:
-            print("cobre")
-        while element == 30:
-            print("zinc")
-        while element == 31:
-            print("galio")
-        while element == 32:
-            print("germanio")
-        while element == 33:
-            print("arsenico")
-        while element == 34:
-            print("selenio")
-        while element == 35:
-            print("bromo")
-        while element == 36:
-            print("kripton")
-        while element == 37:
-            print("rubidio")
-        while element == 38:
-            print("estroncio")
-        while element == 39:
-            print("itrio")
-        while element == 40:
-            print("circonio")
-        while element == 41:
-            print("niobio")
-        while element == 42:
-            print("molibdeno")
-        while element == 43:
-            print("tecnecio")
-        while element == 44:
-            print("rutenio")
-        while element == 45:
-            print("rodio")
-        while element == 46:
-            print("paladio")
-        while element == 47:
-            print("plata")
-        while element == 48:
-            print("cadmio")
-        while element == 49:
-            print("indio")
-        while element == 50:
-            print("estaño")
-        while element == 51:
-            print("antimonio")
-        while element == 52:
-            print("telurio")
-        while element == 53:
-            print("yodo")
-        while element == 54:
-            print("xenon")
-        while element == 55:
-            print("cesio")
-        while element == 56:
-            print("bario")
-        while element == 57:
-            print("lantano")
-        while element == 58:
-            print("cerio")
-        while element == 59:
-            print("praseodimio")
-        while element == 60:
-            print("neodimio")
-        while element == 61:
-            print("prometio")
-        while element == 62:
-            print("samario")
-        while element == 63:
-            print("europio")
-        while element == 64:
-            print("gadolinio")
-        while element == 65:
-            print("terbio")
-        while element == 66:
-            print("disprosio")
-        while element == 67:
-            print("holmio")
-        while element == 68:
-            print("erbio")
-        while element == 69:
-            print("tulio")
-        while element == 70:
-            print("iterbio")
-        while element == 71:
-            print("lutecio")
-        while element == 72:
-            print("hafnio")
-        while element == 73:
-            print("tantalo")
-        while element == 74:
-            print("wolframio")
-        while element == 75:
-            print("renio")
-        while element == 76:
-            print("osmio")
-        while element == 77:
-            print("iridio")
-        while element == 78:
-            print("platino")
-        while element == 79:
-            print("oro")
-        while element == 80:
-            print("mercurio")
-        while element == 81:
-            print("talio")
-        while element == 82:
-            print("plomo")
-        while element == 83:
-            print("bismuto")
-        while element == 84:
-            print("polonio")
-        while element == 85:
-            print("astato")
-        while element == 86:
-            print("radon")
-        while element == 87:
-            print("francio")
-        while element == 88:
-            print("radio")
-        while element == 89:
-            print("actinio")
-        while element == 90:
-            print("torio")
-        while element == 91:
-            print("protactinio")
-        while element == 92:
-            print("uranio")
-        while element == 93:
-            print("neptunio")
-        while element == 94:
-            print("plutonio")
-        while element == 95:
-            print("americio")
-        while element == 96:
-            print("curio")
-        while element == 97:
-            print("berkelio")
-        while element == 98:
-            print("californio")
-        while element == 99:
-            print("einstenio")
-        while element == 100:
-            print("fermio")
-        while element == 101:
-            print("mendelevio")
-        while element == 102:
-            print("nobelio")
-        while element == 103:
-            print("lawrencio")
-        while element == 104:
-            print("rutherfordio")
-        while element == 105:
-            print("dubnio")
-        while element == 106:
-            print("seaborgio")
-        while element == 107:
-            print("bohrio")
-        while element == 108:
-            print("hasio")
-        while element == 109:
-            print("meitnerio")
-        while element == 110:
-            print("darmstatio")
-        while element == 111:
-            print("roentgenio")
-        while element == 112:
-            print("copernicio")
-        while element == 113:
-            print("nihonio")
-        while element == 114:
-            print("flerevio")
-        while element == 115:
-            print("moscovio")
-        while element == 116:
-            print("livermorio")
-        while element == 117:
-            print("teneso")
-        while element == 118:
-            print("organeson")
+                break
+            if vidas == 0:
+                print("te quedaste sin intentos, a estudiar")
+                menu = int(input())
+
+    print("usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
+    element = random.randint(1, 118)
+    vidas=3
+    while element == 1:
+        atomo="hidrogeno"
+        nometal(),intentos(atomo)
+    while element == 2:
+        atomo="helio"
+        nometal(),intentos(atomo)
+    while element == 3:
+        atomo = "litio"
+        nometal(), intentos(atomo)
+    while element == 4:
+        atomo = "berilio"
+        nometal(), intentos(atomo)
+    while element == 5:
+        atomo = "boro"
+        nometal(), intentos(atomo)
+    while element == 6:
+        atomo = "carbono"
+        nometal(), intentos(atomo)
+    while element == 7:
+        atomo = "nitrogeno"
+        nometal(), intentos(atomo)
+    while element == 8:
+        atomo = "oxigeno"
+        nometal(), intentos(atomo)
+    while element == 9:
+        atomo = "fluor"
+        nometal(), intentos(atomo)
+    while element == 10:
+        atomo = "neon"
+        nometal(), intentos(atomo)
+    while element == 11:
+        atomo = "sodio"
+        nometal(), intentos(atomo)
+    while element == 12:
+        atomo = "magnesio"
+        nometal(), intentos(atomo)
+    while element == 13:
+        atomo = "aluminio"
+        nometal(), intentos(atomo)
+    while element == 14:
+        atomo = ("silicio")
+        nometal(), intentos(atomo)
+    while element == 15:
+        atomo = ("fosforo")
+        nometal(), intentos(atomo)
+    while element == 16:
+        atomo = ("azufre")
+        nometal(), intentos(atomo)
+    while element == 17:
+        atomo = ("cloro")
+        nometal(), intentos(atomo)
+    while element == 18:
+        atomo = ("argon")
+        nometal(), intentos(atomo)
+    while element == 19:
+        atomo = ("potasio")
+        nometal(), intentos(atomo)
+    while element == 20:
+        atomo = ("calcio")
+        nometal(), intentos(atomo)
+    while element == 21:
+        atomo = ("escandio")
+        nometal(), intentos(atomo)
+    while element == 22:
+        atomo = ("titanio")
+        nometal(), intentos(atomo)
+    while element == 23:
+        atomo = ("vanadio")
+        nometal(), intentos(atomo)
+    while element == 24:
+        atomo = ("cromo")
+        nometal(), intentos(atomo)
+    while element == 25:
+        atomo = ("manganeso")
+        nometal(), intentos(atomo)
+    while element == 26:
+        atomo = ("hierro")
+        nometal(), intentos(atomo)
+    while element == 27:
+        atomo = ("cobalto")
+        nometal(), intentos(atomo)
+    while element == 28:
+        atomo = ("niquel")
+        nometal(), intentos(atomo)
+    while element == 29:
+        atomo = ("cobre")
+        nometal(), intentos(atomo)
+    while element == 30:
+        atomo = ("zinc")
+        nometal(), intentos(atomo)
+    while element == 31:
+        atomo = ("galio")
+        nometal(), intentos(atomo)
+    while element == 32:
+        atomo = ("germanio")
+        nometal(), intentos(atomo)
+    while element == 33:
+        atomo = ("arsenico")
+        nometal(), intentos(atomo)
+    while element == 34:
+        atomo = ("selenio")
+        nometal(), intentos(atomo)
+    while element == 35:
+        atomo = ("bromo")
+        nometal(), intentos(atomo)
+    while element == 36:
+        atomo = ("kripton")
+        nometal(), intentos(atomo)
+    while element == 37:
+        atomo = ("rubidio")
+        nometal(), intentos(atomo)
+    while element == 38:
+        atomo = ("estroncio")
+        nometal(), intentos(atomo)
+    while element == 39:
+        atomo = ("itrio")
+        nometal(), intentos(atomo)
+    while element == 40:
+        atomo = ("circonio")
+        nometal(), intentos(atomo)
+    while element == 41:
+        atomo = ("niobio")
+        nometal(), intentos(atomo)
+    while element == 42:
+        atomo = ("molibdeno")
+        nometal(), intentos(atomo)
+    while element == 43:
+        atomo = ("tecnecio")
+        nometal(), intentos(atomo)
+    while element == 44:
+        atomo = ("rutenio")
+        nometal(), intentos(atomo)
+    while element == 45:
+        atomo = ("rodio")
+        nometal(), intentos(atomo)
+    while element == 46:
+        atomo = ("paladio")
+        nometal(), intentos(atomo)
+    while element == 47:
+        atomo = ("plata")
+        nometal(), intentos(atomo)
+    while element == 48:
+        atomo = ("cadmio")
+        nometal(), intentos(atomo)
+    while element == 49:
+        atomo = ("indio")
+        nometal(), intentos(atomo)
+    while element == 50:
+        atomo = ("estaño")
+        nometal(), intentos(atomo)
+    while element == 51:
+        atomo = ("antimonio")
+        nometal(), intentos(atomo)
+    while element == 52:
+        atomo = ("telurio")
+        nometal(), intentos(atomo)
+    while element == 53:
+        atomo = ("yodo")
+        nometal(), intentos(atomo)
+    while element == 54:
+        atomo = ("xenon")
+        nometal(), intentos(atomo)
+    while element == 55:
+        atomo = ("cesio")
+        nometal(), intentos(atomo)
+    while element == 56:
+        atomo = ("bario")
+        nometal(), intentos(atomo)
+    while element == 57:
+        atomo = ("lantano")
+        nometal(), intentos(atomo)
+    while element == 58:
+        atomo = ("cerio")
+        nometal(), intentos(atomo)
+    while element == 59:
+        atomo = ("praseodimio")
+        nometal(), intentos(atomo)
+    while element == 60:
+        atomo = ("neodimio")
+        nometal(), intentos(atomo)
+    while element == 61:
+        atomo = ("prometio")
+        nometal(), intentos(atomo)
+    while element == 62:
+        atomo = ("samario")
+        nometal(), intentos(atomo)
+    while element == 63:
+        atomo = ("europio")
+        nometal(), intentos(atomo)
+    while element == 64:
+        atomo = ("gadolinio")
+        nometal(), intentos(atomo)
+    while element == 65:
+        atomo = ("terbio")
+        nometal(), intentos(atomo)
+    while element == 66:
+        atomo = ("disprosio")
+        nometal(), intentos(atomo)
+    while element == 67:
+        atomo = ("holmio")
+        nometal(), intentos(atomo)
+    while element == 68:
+        atomo = ("erbio")
+        nometal(), intentos(atomo)
+    while element == 69:
+        atomo = ("tulio")
+        nometal(), intentos(atomo)
+    while element == 70:
+        atomo = ("iterbio")
+        nometal(), intentos(atomo)
+    while element == 71:
+        atomo = ("lutecio")
+        nometal(), intentos(atomo)
+    while element == 72:
+        atomo = ("hafnio")
+        nometal(), intentos(atomo)
+    while element == 73:
+        atomo = ("tantalo")
+        nometal(), intentos(atomo)
+    while element == 74:
+        atomo = ("wolframio")
+        nometal(), intentos(atomo)
+    while element == 75:
+        atomo = ("renio")
+        nometal(), intentos(atomo)
+    while element == 76:
+        atomo = ("osmio")
+        nometal(), intentos(atomo)
+    while element == 77:
+        atomo = ("iridio")
+        nometal(), intentos(atomo)
+    while element == 78:
+        atomo = ("platino")
+        nometal(), intentos(atomo)
+    while element == 79:
+        atomo = ("oro")
+        nometal(), intentos(atomo)
+    while element == 80:
+        atomo = ("mercurio")
+        nometal(), intentos(atomo)
+    while element == 81:
+        atomo = ("talio")
+        nometal(), intentos(atomo)
+    while element == 82:
+        atomo = ("plomo")
+        nometal(), intentos(atomo)
+    while element == 83:
+        atomo = ("bismuto")
+        nometal(), intentos(atomo)
+    while element == 84:
+        atomo = ("polonio")
+        nometal(), intentos(atomo)
+    while element == 85:
+        atomo = ("astato")
+        nometal(), intentos(atomo)
+    while element == 86:
+        atomo = ("radon")
+        nometal(), intentos(atomo)
+    while element == 87:
+        atomo = ("francio")
+        nometal(), intentos(atomo)
+    while element == 88:
+        atomo = ("radio")
+        nometal(), intentos(atomo)
+    while element == 89:
+        atomo = ("actinio")
+        nometal(), intentos(atomo)
+    while element == 90:
+        atomo = ("torio")
+        nometal(), intentos(atomo)
+    while element == 91:
+        atomo = ("protactinio")
+        nometal(), intentos(atomo)
+    while element == 92:
+        atomo = ("uranio")
+        nometal(), intentos(atomo)
+    while element == 93:
+        atomo = ("neptunio")
+        nometal(), intentos(atomo)
+    while element == 94:
+        atomo = ("plutonio")
+        nometal(), intentos(atomo)
+    while element == 95:
+        atomo = ("americio")
+        nometal(), intentos(atomo)
+    while element == 96:
+        atomo = ("curio")
+        nometal(), intentos(atomo)
+    while element == 97:
+        atomo = ("berkelio")
+        nometal(), intentos(atomo)
+    while element == 98:
+        atomo = ("californio")
+        nometal(), intentos(atomo)
+    while element == 99:
+        atomo = ("einstenio")
+        nometal(), intentos(atomo)
+    while element == 100:
+        atomo = ("fermio")
+        nometal(), intentos(atomo)
+    while element == 101:
+        atomo = ("mendelevio")
+        nometal(), intentos(atomo)
+    while element == 102:
+        atomo = ("nobelio")
+        nometal(), intentos(atomo)
+    while element == 103:
+        atomo = ("lawrencio")
+        nometal(), intentos(atomo)
+    while element == 104:
+        atomo = ("rutherfordio")
+        nometal(), intentos(atomo)
+    while element == 105:
+        atomo = ("dubnio")
+        nometal(), intentos(atomo)
+    while element == 106:
+        atomo = ("seaborgio")
+        nometal(), intentos(atomo)
+    while element == 107:
+        atomo = ("bohrio")
+        nometal(), intentos(atomo)
+    while element == 108:
+        atomo = ("hasio")
+        nometal(), intentos(atomo)
+    while element == 109:
+        atomo = ("meitnerio")
+        nometal(), intentos(atomo)
+    while element == 110:
+        atomo = ("darmstatio")
+        nometal(), intentos(atomo)
+    while element == 111:
+        atomo = ("roentgenio")
+        nometal(), intentos(atomo)
+    while element == 112:
+        atomo = ("copernicio")
+        nometal(), intentos(atomo)
+    while element == 113:
+        atomo = ("nihonio")
+        nometal(), intentos(atomo)
+    while element == 114:
+        atomo = ("flerevio")
+        nometal(), intentos(atomo)
+    while element == 115:
+        atomo = ("moscovio")
+        nometal(), intentos(atomo)
+    while element == 116:
+        atomo = ("livermorio")
+        nometal(), intentos(atomo)
+    while element == 117:
+        atomo = ("teneso")
+        nometal(), intentos(atomo)
+    while element == 118:
+        atomo = ("organeson")
+        nometal(), intentos(atomo)
