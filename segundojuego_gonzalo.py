@@ -9,14 +9,11 @@ while menu==2:
     while dificultadjuego2 == 1:
         print("----------primera pregunta----------")
         print("La Copa del Mundo de 2026 se jugará en tres países diferentes. ¿Puedes elegir la opcion correcta?")
-        seleccion1 = str("argentina,brasil y chile")
-        seleccion2 = str("eeuu, mexico y canada")
-        seleccion3 = str("italia, francia y españa")
-        seleccion4 = str("australia, nueva zelanda y fiji")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) argentina,brasil y chile")
+        print("2) eeuu, mexico y canada")
+        print("3) italia, francia y españa")
+        print("4) australia, nueva zelanda y fiji")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
@@ -27,14 +24,11 @@ while menu==2:
             rtaC1 = 0
         print("----------segunda pregunta----------")
         print("¿Cuantas selecciones participan en un mundial de futbol?")
-        seleccion1 = str("32 equipos")
-        seleccion2 = str("36 equipos")
-        seleccion3 = str("40 equipos")
-        seleccion4 = str("42 equipos")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) 32 equipos")
+        print("2) 36 equipos")
+        print("3) 40 equipos")
+        print("4) 42 equipos")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
@@ -45,14 +39,11 @@ while menu==2:
             rtaC2 = 0
         print("----------tercer pregunta----------")
         print("¿Que selección es la que mas ha ganado la copa del mundo?")
-        seleccion1 = str("Italia")
-        seleccion2 = str("Francia")
-        seleccion3 = str("Brasil")
-        seleccion4 = str("Alemania")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) Italia")
+        print("2) Francia")
+        print("3) Brasil")
+        print("4) Alemania")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
@@ -63,15 +54,12 @@ while menu==2:
             rtaC3 = 0
         print("----------cuarta pregunta----------")
         print("¿Donde se disputo la copa del mundo 2006?")
-        seleccion1 = str("España")
-        seleccion2 = str("Sudafrica")
-        seleccion3 = str("Alemania")
-        seleccion4 = str("Japon/Corea del sur")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) España")
+        print("2) Sudafrica")
+        print("3) Alemania")
+        print("4) Japon/Corea del sur")
         rta = int(input("ingrese el numero de la opcion correcta"))
+
         if rta == 3:
             print("respuesta correcta")
             rtaC4 = 10
@@ -81,14 +69,11 @@ while menu==2:
             rtaC4 = 0
         print("----------quinta pregunta----------")
         print("¿Qué animal fue el escogido para ilustrar la mascota del Mundial de Rusia?")
-        seleccion1 = str("Lobo")
-        seleccion2 = str("Perro")
-        seleccion3 = str("Gato")
-        seleccion4 = str("Loro")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) Lobo")
+        print("2) Perro")
+        print("3) Gato")
+        print("4) Loro")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
@@ -99,14 +84,11 @@ while menu==2:
             rtaC5 = 0
         print("----------sexta pregunta----------")
         print("¿Cada cuantos años se realiza esta competición?")
-        seleccion1 = str("Cada 4 años")
-        seleccion2 = str("Cada 6 años")
-        seleccion3 = str("Cada 5 años")
-        seleccion4 = str("Cada 3 años")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) Cada 4 años")
+        print("2) Cada 6 años")
+        print("3) Cada 5 años")
+        print("4) Cada 3 años")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
@@ -117,14 +99,11 @@ while menu==2:
             rtaC6 = 0
         print("----------septima y ultima pregunta----------")
         print("¿Recuerdas dónde se jugó la Copa del Mundial del año 2010?")
-        seleccion1 = str("Italia")
-        seleccion2 = str("Sudafrica")
-        seleccion3 = str("Alemania")
-        seleccion4 = str("España")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) Italia")
+        print("2) Sudafrica")
+        print("3) Alemania")
+        print("4) España")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
@@ -141,14 +120,11 @@ while menu==2:
     while dificultadjuego2 == 2:
         print("----------primera pregunta----------")
         print("¿Que seleccion de futbol gano el primer mundial?")
-        seleccion1 = str("argentina")
-        seleccion2 = str("alemania")
-        seleccion3 = str("uruguay")
-        seleccion4 = str("italia")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) argentina")
+        print("2) alemania")
+        print("3) uruguay")
+        print("4) italia")
+
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
@@ -159,14 +135,10 @@ while menu==2:
             rtaC1 = 0
         print("----------segunda pregunta----------")
         print("¿Qué selección llegó a tres finales de la Copa del Mundo pero nunca ganó el título?")
-        seleccion1 = str("suiza")
-        seleccion2 = str("croacia")
-        seleccion3 = str("hungria")
-        seleccion4 = str("holanda")
-        print("1", seleccion1)
-        print("2", seleccion2)
-        print("3", seleccion3)
-        print("4", seleccion4)
+        print("1) suiza")
+        print("2) croacia")
+        print("3) hungria")
+        print("4) holanda")
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 4:
             print("respuesta correcta")
