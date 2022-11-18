@@ -1,5 +1,6 @@
 menu=2 #borrar esto al ingresarlo al master
 while menu==2:
+    rtac=0
     print("Bienvenidos a Trivia Sports Mundial")
     print("¿Capaz de lograr el maximo puntaje? Elije tu dificultad. Cada respuesta correcta son 10 puntos...Comenzemos")
     print("Para dificultad Amateur ingrese 1")
@@ -17,11 +18,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
-            rtaC1 = 10
-            print("Su puntaje:", rtaC1, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC1 = 0
+            rtac += 0
         print("----------segunda pregunta----------")
         print("¿Cuantas selecciones participan en un mundial de futbol?")
         print("1) 32 equipos")
@@ -32,11 +33,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC2 = 10
-            print("Su puntaje:", rtaC2, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC2 = 0
+            rtac += 0
         print("----------tercer pregunta----------")
         print("¿Que selección es la que mas ha ganado la copa del mundo?")
         print("1) Italia")
@@ -47,11 +48,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
-            rtaC3 = 10
-            print("Su puntaje:", rtaC3, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC3 = 0
+            rtac += 0
         print("----------cuarta pregunta----------")
         print("¿Donde se disputo la copa del mundo 2006?")
         print("1) España")
@@ -62,11 +63,11 @@ while menu==2:
 
         if rta == 3:
             print("respuesta correcta")
-            rtaC4 = 10
-            print("Su puntaje:", rtaC4, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC4 = 0
+            rtac += 0
         print("----------quinta pregunta----------")
         print("¿Qué animal fue el escogido para ilustrar la mascota del Mundial de Rusia?")
         print("1) Lobo")
@@ -77,11 +78,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC5 = 10
-            print("Su puntaje:", rtaC5, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC5 = 0
+            rtac += 0
         print("----------sexta pregunta----------")
         print("¿Cada cuantos años se realiza esta competición?")
         print("1) Cada 4 años")
@@ -92,11 +93,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC6 = 10
-            print("Su puntaje:", rtaC6, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC6 = 0
+            rtac += 0
         print("----------septima y ultima pregunta----------")
         print("¿Recuerdas dónde se jugó la Copa del Mundial del año 2010?")
         print("1) Italia")
@@ -107,16 +108,16 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
-            rtaC7 = 10
-            print("Su puntaje:", rtaC7, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC7 = 0
-        break
-        rtaT = (rtaC1 + rtaC2 + rtaC3 + rtaC4 + rtaC5 + rtaC6 + rtaC7)
-        print("hemos finalizado la trivia y su puntaje es de:", rtaT, "puntos")
-        if rtaT == 70:
+            rtac += 0
+        print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
+        if rtac == 70:
             print("llegaste al puntaje maximo, felicitaciones")
+        menu=int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
+
     while dificultadjuego2 == 2:
         print("----------primera pregunta----------")
         print("¿Que seleccion de futbol gano el primer mundial?")
@@ -128,11 +129,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
-            rtaC1 = 10
-            print("Su puntaje:", rtaC1, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC1 = 0
+            rtac += 0
         print("----------segunda pregunta----------")
         print("¿Qué selección llegó a tres finales de la Copa del Mundo pero nunca ganó el título?")
         print("1) suiza")
@@ -143,11 +144,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 4:
             print("respuesta correcta")
-            rtaC2 = 10
-            print("Su puntaje:", rtaC2, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC2 = 0
+            rtac += 0
         print("----------tercer pregunta----------")
         print("¿Que jugador de futbol es el maximo goleador de este torneo?")
         print("1) Klose")
@@ -158,11 +159,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC3 = 10
-            print("Su puntaje:", rtaC3, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC3 = 0
+            rtac += 0
         print("----------cuarta pregunta----------")
         print("“Tenía miedo de que se me cayera el trofeo”. ¿Qué ganador del mundial confesó esto?")
         print("1) Iniesta")
@@ -173,11 +174,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 4:
             print("respuesta correcta")
-            rtaC4 = 10
-            print("Su puntaje:", rtaC4, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC4 = 0
+            rtac += 0
         print("----------quinta pregunta----------")
         print("¿Cuánto pesa el trofeo de la Copa del Mundo?")
         print("1) 2 kilos")
@@ -188,11 +189,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
-            rtaC5 = 10
-            print("Su puntaje:", rtaC5, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC5 = 0
+            rtac += 0
         print("----------sexta pregunta----------")
         print("En el Mundial de México en 1986, el argentino Diego Maradona anotó un gol con la mano, que se convirtió en una leyenda en el fútbol y es conocido como “la mano de Dios”. ¿Contra qué equipo marcó ese famoso tanto?")
         print("1) Francia")
@@ -203,11 +204,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 4:
             print("respuesta correcta")
-            rtaC6 = 10
-            print("Su puntaje:", rtaC6, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC6 = 0
+            rtac += 0
         print("----------septima y ultima pregunta----------")
         print("¿Dónde se disputó la Copa Mundial de 1998?")
         print("1) Italia")
@@ -218,16 +219,16 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
-            rtaC7 = 10
-            print("Su puntaje:", rtaC7, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC7 = 0
-        rtaT = (rtaC1 + rtaC2 + rtaC3 + rtaC4 + rtaC5 + rtaC6 + rtaC7)
-        print("hemos finalizado la trivia y su puntaje es de:", rtaT, "puntos")
-        if rtaT == 70:
+            rtac += 0
+        print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
+        if rtac == 70:
             print("llegaste al puntaje maximo, felicitaciones")
-        break
+        menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
+
     while dificultadjuego2 == 3:
         print("----------primera pregunta----------")
         print("Que país ha participado mas veces en la copa del mundo?")
@@ -239,11 +240,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
-            rtaC1 = 10
-            print("Su puntaje:", rtaC1, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC1 = 0
+            rtac += 0
         print("----------segunda pregunta----------")
         print("¿En que año se jugo la primera copa del  mundo?")
         print("1) 1938")
@@ -254,11 +255,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 4:
             print("respuesta correcta")
-            rtaC2 = 10
-            print("Su puntaje:", rtaC2, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC2 = 0
+            rtac += 0
         print("----------tercer pregunta----------")
         print("Que selección ha disputado mas finales de esta competencia?")
         print("1) Holanda")
@@ -269,11 +270,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
-            rtaC3 = 10
-            print("Su puntaje:", rtaC3, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC3 = 0
+            rtac += 0
         print("----------cuarta pregunta----------")
         print("Quien es el único jugador en obtener tres veces la copa del mundo?")
         print("1) Pelé")
@@ -284,11 +285,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC4 = 10
-            print("Su puntaje:", rtaC4, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC4 = 0
+            rtac += 0
         print("----------quinta pregunta----------")
         print("Quien fue el jugador mas joven en ganar la copa del mundo?")
         print("1) Mbappe")
@@ -299,11 +300,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 2:
             print("respuesta correcta")
-            rtaC5 = 10
-            print("Su puntaje:", rtaC5, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC5 = 0
+            rtac += 0
         print("----------sexta pregunta----------")
         print("Quien fue el jugador mas veterano en disputar una copa del mundo?")
         print("1) Peter Cech")
@@ -314,11 +315,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 3:
             print("respuesta correcta")
-            rtaC6 = 10
-            print("Su puntaje:", rtaC6, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC6 = 0
+            rtac += 0
         print("----------septima pregunta----------")
         print("Cual de estas selecciones nunca disputador un mundial?")
         print("1) Finlandia")
@@ -329,11 +330,11 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC7 = 10
-            print("Su puntaje:", rtaC7, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC7 = 0
+            rtac += 0
         print("----------octava y ultima pregunta----------")
         print("¿Quien anoto el primer gol en la historia de los mundiales?")
         print("1) Laurent")
@@ -344,13 +345,12 @@ while menu==2:
         rta = int(input("ingrese el numero de la opcion correcta"))
         if rta == 1:
             print("respuesta correcta")
-            rtaC8 = 10
-            print("Su puntaje:", rtaC8, "puntos")
+            rtac += 10
+            print("Su puntaje:", rtac, "puntos")
         else:
             print("respuesta incorrecta")
-            rtaC8 = 0
-        break
-        rtaT = (rtaC1 + rtaC2 + rtaC3 + rtaC4 + rtaC5 + rtaC6 + rtaC7)
-        print("hemos finalizado la trivia y su puntaje es de:", rtaT, "puntos")
-        if rtaT == 70:
+            rtac += 0
+        print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
+        if rtac == 70:
             print("llegaste al puntaje maximo, felicitaciones")
+        menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
