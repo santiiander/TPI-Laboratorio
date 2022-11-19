@@ -55,15 +55,19 @@ while menu == 0:
 
         else:
             numero = int(input("El numero será elegido por el otro jugador: "))
+            print("\n"*15)
             while dificultadjuego1 == 1 and numero > 100:
                 print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
                 numero = int(input("El numero será elegido por el otro jugador: "))
+                print("\n" * 15)
             while dificultadjuego1 == 2 and 100 > numero < 500:
                 print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
                 numero = int(input("El numero será elegido por el otro jugador: "))
+                print("\n" * 15)
             while dificultadjuego1 == 3 and 500 > numero < 1000:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
                 numero = int(input("El numero será elegido por el otro jugador: "))
+                print("\n" * 15)
 
         if numero > 0:
             digits = int(math.log10(numero)) + 1
@@ -74,6 +78,7 @@ while menu == 0:
                 print("El numero tiene", digits, "digitos!")
 
         while vidas != 2:
+
             print("Intentemoslo")
             numentrada = int(input())
 
