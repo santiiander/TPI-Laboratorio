@@ -1,6 +1,5 @@
 import random
 menu=3
-
 while menu == 3:
     def nometal(): print("es un no metal")
     def metal(): print("es un metal")
@@ -8,7 +7,6 @@ while menu == 3:
     def bloqueS(): print("se encuentra en el bloque S")
     def bloqueD(): print("se encuentra en el bloque D")
     def bloqueF(): print("se encuentra en el bloque F")
-    def numero(): print("tiene un numero atomico de 1 digito")
     def intentos(atomo):
         vidas=3
         guess = str.lower(input())
@@ -30,9 +28,7 @@ while menu == 3:
             guess = str.lower(input())
             if vidas > 0:
                 if guess != atomo:
-                    if 0<element<10:
-                        numero()
-
+                    print("su cantidad de electrones es de:",element)
             if guess == atomo:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -42,8 +38,8 @@ while menu == 3:
                 menu = int(input())
 
     print("usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
-    element = random.randint(1, 118)
     vidas=3
+    element = random.randint(1, 118)
     while element == 1:
         atomo="hidrogeno"
         nometal(),intentos(atomo)
