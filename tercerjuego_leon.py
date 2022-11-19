@@ -3,10 +3,6 @@ menu=3
 while menu == 3:
     def nometal(): print("es un no metal")
     def metal(): print("es un metal")
-    def bloqueP(): print("se encuentra en el bloque P")
-    def bloqueS(): print("se encuentra en el bloque S")
-    def bloqueD(): print("se encuentra en el bloque D")
-    def bloqueF(): print("se encuentra en el bloque F")
     def intentos(atomo):
         vidas=3
         guess = str.lower(input())
@@ -16,13 +12,13 @@ while menu == 3:
         elif guess != atomo:
             vidas = vidas - 1
             if 0<element<5 or 10<element<13 or 18<element<21 or 36<element<39 or 54<element<57 or 86<element<89:
-                bloqueS()
+                print("se encuentra en el bloque S")
             if 4<element<11 or 12<element<19 or 30<element<37 or 48<element<55 or 80<element<87 or 112<element<119:
-                bloqueP()
+                print("se encuentra en el bloque P")
             if 20<element<31 or 38<element<49 or 70<element<81 or 103<element<113:
-                bloqueD()
+                print("se encuentra en el bloque D")
             if 56<element<71 or 88<element<103:
-                bloqueF()
+                print("se encuentra en el bloque F")
         while 0 < vidas < 3:
             vidas = vidas - 1
             guess = str.lower(input())
