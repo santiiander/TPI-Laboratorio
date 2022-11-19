@@ -1,5 +1,6 @@
 import math
 import random
+
 menu = 0
 while menu == 0:
 
@@ -13,7 +14,7 @@ while menu == 0:
 
     while menu == 1:
         contadorproblema = 0
-        randominvader=0
+        randominvader = 0
         probabilidadinvader = random.randint(1, 2)
         print("Bienvenido a Adivina el número")
         dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
@@ -29,7 +30,6 @@ while menu == 0:
 
         inputnumero = int(input("Por favor, ingrese 1 si desea que el numero sea aleatorio, 0 si desea ingresarlo "))
         if probabilidadinvader == 1:
-
             print("Oh no!, un invader se metió en el programa ;)")
             print("      ____       ")
             print('     /___/\_                   ')
@@ -55,13 +55,15 @@ while menu == 0:
 
         else:
             numero = int(input("El numero será elegido por el otro jugador: "))
-            if dificultadjuego1 == 1 and numero > 100:
+            while dificultadjuego1 == 1 and numero > 100:
                 print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
-            if dificultadjuego1 == 2 and 100 > numero < 500:
+                numero = int(input("El numero será elegido por el otro jugador: "))
+            while dificultadjuego1 == 2 and 100 > numero < 500:
                 print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
-            if dificultadjuego1 == 3 and 500 > numero > 1000:
+                numero = int(input("El numero será elegido por el otro jugador: "))
+            while dificultadjuego1 == 3 and 500 > numero < 1000:
                 print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
-
+                numero = int(input("El numero será elegido por el otro jugador: "))
 
         if numero > 0:
             digits = int(math.log10(numero)) + 1
@@ -71,7 +73,7 @@ while menu == 0:
                 digits = 1
                 print("El numero tiene", digits, "digitos!")
 
-        while vidas != 2:  # arreglar error de dificultad y esta linea
+        while vidas != 2:
             print("Intentemoslo")
             numentrada = int(input())
 
@@ -83,17 +85,20 @@ while menu == 0:
             else:
                 if numentrada != numero:
                     vidas -= 1
-            while vidas == 3 and contadorproblema==0:
-                    if probabilidadinvader == 1:
 
-                        if randominvader == 1:
-                            vidas -= 1
-                            print("El invader se metió en el código y te robó 1 vida! 💔 ")
+            if vidas == 3 and contadorproblema == 0:
 
-                        else:
-                            vidas += 1
-                            contadorproblema+=1
-                            print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
+                if probabilidadinvader == 1:
+
+                    if randominvader == 1:
+                        vidas -= 1
+                        print("El invader se metió en el código y te robó 1 vida! 💔 ")
+
+                    else:
+                        vidas += 1
+                        contadorproblema += 1
+                        print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
+
             while vidas > 0 and vidas < 7 and numentrada != numero and randominvader != 2:
                 vidas -= 1
                 print("Oh, una vida menos :( , prueba de nuevo")
@@ -114,10 +119,6 @@ while menu == 0:
                     menu = int(input())
                     break
                 primerdigito = int(str(numero)[0])
-
-
-
-
 
             if vidas == 0:
                 print("Lo siento! perdiste :(")
