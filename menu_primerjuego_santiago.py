@@ -83,11 +83,30 @@ while menu == 0:
             else:
                 if numentrada != numero:
                     vidas -= 1
+            while vidas == 3 and contadorproblema==0:
+                    if probabilidadinvader == 1:
 
+                        if randominvader == 1:
+                            vidas -= 1
+                            print("El invader se metió en el código y te robó 1 vida! 💔 ")
+
+                        else:
+                            vidas += 1
+                            contadorproblema+=1
+                            print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
             while vidas > 0 and vidas < 7 and numentrada != numero and randominvader != 2:
                 vidas -= 1
                 print("Oh, una vida menos :( , prueba de nuevo")
                 numentrada = int(input())
+
+                if vidas == 2 and digits == 1:
+                    print("Lo siento, no puedo revelarte la cantidad de digitos")
+                    print("Pero puedo decirte que tu numero se encuentra entre el 0 y el 9")
+
+                if vidas == 2 and digits > 1:
+                    print("Veo que ya solo te quedan 2 intentos D:")
+                    print("Voy a darte una pista...")
+                    print("El numero empieza con", primerdigito)
 
                 if numentrada == numero:
                     print("Numero correcto!")
@@ -96,27 +115,9 @@ while menu == 0:
                     break
                 primerdigito = int(str(numero)[0])
 
-            while vidas == 3 and contadorproblema==0:
-                    if probabilidadinvader == 1:
 
-                        if randominvader == 1:
-                            vidas -= 1
-                            print(
-                            "El invader se metió en el código y te robó 1 vida! 💔 ")
 
-                        else:
-                            vidas += 1
-                            contadorproblema+=1
-                            print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
 
-            if vidas == 2 and digits == 1:
-                print("Lo siento, no puedo revelarte la cantidad de digitos")
-                print("Pero puedo decirte que tu numero se encuentra entre el 0 y el 9")
-
-            if vidas == 2 and digits > 1:
-                print("Veo que ya solo te quedan 2 intentos D:")
-                print("Voy a darte una pista...")
-                print("El numero empieza con", primerdigito)
 
             if vidas == 0:
                 print("Lo siento! perdiste :(")
