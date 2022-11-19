@@ -4,10 +4,10 @@ import random
 menu = 0
 while menu == 0:
 
-    print("Hola!, Bienvenido.")
+    print("Hola!, Bienvenido .")
     print("Por favor, seleccione el número correspondiente al juego o actividad")
     print("1) Adivina el numero")
-    print("2) ???")
+    print("2) Trivia Sports Mundial")
     print("3) Tabla Periodica Quizz")
     print("4) ???")
     print("5) Salir")
@@ -761,3 +761,6 @@ while menu == 3:
     if element == 118:
         atomo = ("organeson")
         desconocido(), intentos(atomo)
+while menu==5:
+    print("Gracias por jugar!")
+    break
