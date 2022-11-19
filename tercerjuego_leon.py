@@ -3,6 +3,7 @@ menu=3
 while menu == 3:
     def nometal(): print("es un no metal")
     def metal(): print("es un metal")
+    def semimetal(): print("es un semi metal")
     def intentos(atomo):
         vidas=3
         guess = str.lower(input())
