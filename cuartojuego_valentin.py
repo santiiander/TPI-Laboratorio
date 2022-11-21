@@ -54,7 +54,7 @@ print()
 dificultad = int(input("ingrese la dificultad con 1, 2 o 3 "))
 print()
 if 1 == dificultad:
-  d1 = print("su dificultad es fácil")
+  print("su dificultad es fácil")
   hp = 1000
   tuhp = 500
   hpmax = 1000
