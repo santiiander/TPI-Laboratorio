@@ -1,44 +1,45 @@
 def ver_dragon():
-	print(          "                                   HP:", hp, "                              	")
-	print(	        "			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣤⡼⠀⢀⡀⣀⢱⡄⡀⠀⠀⠀⢲⣤⣤⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀          	")
-	print(		    "			⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⡿⠛⠋⠁⣤⣿⣿⣿⣧⣷⠀⠀⠘⠉⠛⢻⣷⣿⣽⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀         	")
-	print(			"			⠀⠀⠀⠀⠀⠀⢀⣴⣞⣽⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠠⣿⣿⡟⢻⣿⣿⣇⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣟⢦⡀⠀⠀⠀⠀⠀⠀        	")
-	print(			"			⠀⠀⠀⠀⠀⣠⣿⡾⣿⣿⣿⣿⣿⠿⣻⣿⣿⡀⠀⠀⠀⢻⣿⣷⡀⠻⣧⣿⠆⠀⠀⠀⠀⣿⣿⣿⡻⣿⣿⣿⣿⣿⠿⣽⣦⡀⠀⠀⠀⠀       	")
-	print(			"			⠀⠀⠀⠀⣼⠟⣩⣾⣿⣿⣿⢟⣵⣾⣿⣿⣿⣧⠀⠀⠀⠈⠿⣿⣿⣷⣈⠁⠀⠀⠀⠀⣰⣿⣿⣿⣿⣮⣟⢯⣿⣿⣷⣬⡻⣷⡄⠀⠀⠀       	")
-	print(			"			⠀⠀⢀⡜⣡⣾⣿⢿⣿⣿⣿⣿⣿⢟⣵⣿⣿⣿⣷⣄⠀⣰⣿⣿⣿⣿⣿⣷⣄⠀⢀⣼⣿⣿⣿⣷⡹⣿⣿⣿⣿⣿⣿⢿⣿⣮⡳⡄⠀⠀     	")
-	print(			"			⠀⢠⢟⣿⡿⠋⣠⣾⢿⣿⣿⠟⢃⣾⢟⣿⢿⣿⣿⣿⣾⡿⠟⠻⣿⣻⣿⣏⠻⣿⣾⣿⣿⣿⣿⡛⣿⡌⠻⣿⣿⡿⣿⣦⡙⢿⣿⡝⣆⠀    	")
-	print(			"			⠀⢯⣿⠏⣠⠞⠋⠀⣠⡿⠋⢀⣿⠁⢸⡏⣿⠿⣿⣿⠃⢠⣴⣾⣿⣿⣿⡟⠀⠘⢹⣿⠟⣿⣾⣷⠈⣿⡄⠘⢿⣦⠀⠈⠻⣆⠙⣿⣜⠆    	")
-	print(			"			⢀⣿⠃⡴⠃⢀⡠⠞⠋⠀⠀⠼⠋⠀⠸⡇⠻⠀⠈⠃⠀⣧⢋⣼⣿⣿⣿⣷⣆⠀⠈⠁⠀⠟⠁⡟⠀⠈⠻⠀⠀⠉⠳⢦⡀⠈⢣⠈⢿⡄      	")
-	print(			"			⣸⠇⢠⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⠿⠋⠀⢻⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢾⣆⠈⣷           	")
-	print(			" 			⡟⠀⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣤⡀⢸⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⢹             	")
-	print(			"			⡇⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠈⣿⣼⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⢸             	")
-	print(			"    	    ⢡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠶⣶⡟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼              	")
-	print(			"	    	⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁               	")
-	print(			"    			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡁⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               	")
-	print(			"	    		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣼⣀⣠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              	")
-	print("\n\n")
+    print(          "                                   HP:", hp, "                              	")
+    print(	        "			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣤⡼⠀⢀⡀⣀⢱⡄⡀⠀⠀⠀⢲⣤⣤⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀          	")
+    print(		    "			⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⡿⠛⠋⠁⣤⣿⣿⣿⣧⣷⠀⠀⠘⠉⠛⢻⣷⣿⣽⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀         	")
+    print(			"			⠀⠀⠀⠀⠀⠀⢀⣴⣞⣽⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠠⣿⣿⡟⢻⣿⣿⣇⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣟⢦⡀⠀⠀⠀⠀⠀⠀        	")
+    print(			"			⠀⠀⠀⠀⠀⣠⣿⡾⣿⣿⣿⣿⣿⠿⣻⣿⣿⡀⠀⠀⠀⢻⣿⣷⡀⠻⣧⣿⠆⠀⠀⠀⠀⣿⣿⣿⡻⣿⣿⣿⣿⣿⠿⣽⣦⡀⠀⠀⠀⠀       	")
+    print(			"			⠀⠀⠀⠀⣼⠟⣩⣾⣿⣿⣿⢟⣵⣾⣿⣿⣿⣧⠀⠀⠀⠈⠿⣿⣿⣷⣈⠁⠀⠀⠀⠀⣰⣿⣿⣿⣿⣮⣟⢯⣿⣿⣷⣬⡻⣷⡄⠀⠀⠀       	")
+    print(			"			⠀⠀⢀⡜⣡⣾⣿⢿⣿⣿⣿⣿⣿⢟⣵⣿⣿⣿⣷⣄⠀⣰⣿⣿⣿⣿⣿⣷⣄⠀⢀⣼⣿⣿⣿⣷⡹⣿⣿⣿⣿⣿⣿⢿⣿⣮⡳⡄⠀⠀     	")
+    print(			"			⠀⢠⢟⣿⡿⠋⣠⣾⢿⣿⣿⠟⢃⣾⢟⣿⢿⣿⣿⣿⣾⡿⠟⠻⣿⣻⣿⣏⠻⣿⣾⣿⣿⣿⣿⡛⣿⡌⠻⣿⣿⡿⣿⣦⡙⢿⣿⡝⣆⠀    	")
+    print(			"			⠀⢯⣿⠏⣠⠞⠋⠀⣠⡿⠋⢀⣿⠁⢸⡏⣿⠿⣿⣿⠃⢠⣴⣾⣿⣿⣿⡟⠀⠘⢹⣿⠟⣿⣾⣷⠈⣿⡄⠘⢿⣦⠀⠈⠻⣆⠙⣿⣜⠆    	")
+    print(			"			⢀⣿⠃⡴⠃⢀⡠⠞⠋⠀⠀⠼⠋⠀⠸⡇⠻⠀⠈⠃⠀⣧⢋⣼⣿⣿⣿⣷⣆⠀⠈⠁⠀⠟⠁⡟⠀⠈⠻⠀⠀⠉⠳⢦⡀⠈⢣⠈⢿⡄      	")
+    print(			"			⣸⠇⢠⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⠿⠋⠀⢻⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢾⣆⠈⣷           	")
+    print(			" 			⡟⠀⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣤⡀⢸⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⢹             	")
+    print(			"			⡇⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠈⣿⣼⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⢸             	")
+    print(			"    	    ⢡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠶⣶⡟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼              	")
+    print(			"	    	⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁               	")
+    print(			"    			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡁⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               	")
+    print(			"	    		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣼⣀⣠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              	")
+    print("\n\n")
 
 def ver_caballero():
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣿⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀          	")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀         	")
-	print("							⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀        	")
-	print("							⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⢟⣭⣴⣶⡦⠍⠛⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀        	")
-	print("							⠈⠳⣶⣤⣤⣶⣿⠿⢫⣾⣿⣿⠋⠀⠀⠀⠀⢸⣿⡟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀        	")
-	print("							⠀⠀⠈⠉⠉⠉⠁⣰⣿⣿⣿⠇⠀⢀⣀⣤⣴⣾⣧⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀        	")
-	print("							⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡟⢠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀			")
-	print("							⠀⠀⠀⠀⠀⣠⣿⣿⣿⡟⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀			")
-	print("							⠀⠀⢀⣠⣶⣿⣿⡿⠋⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡷⠀⠀⠀⠀ 		")
-	print("							⠉⠛⠛⠛⠛⠛⠉⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣛⣥⣶⣆⠀⠀⠀		")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⠏⣥⣤⡙⢟⣫⡴⠿⠿⠿⠷⠿⣷⡀⠀			")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⡜⢿⡿⢃⣌⢻⣟⠛⠻⠶⠶⢶⣾⣿⡄			")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⡄⣾⣿⣿⣷⡝⢿⣷⣶⣶⣦⡾⠟⠁			")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣟⣛⣻⠿⠿⢧⢹⣿⣿⣿⣿⣦⡙⢷⡶⠋⠀⠀⠀			")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣝⠻⣿⣿⣛⠷⠌⢿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀			")
-	print("							⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣮⣝⠻⣿⣶⣦⣤⣉⠛⠿⢿⠁⠀⠀⠀⠀⠀			")
-	print("							⠀⠀⠀⠀⠀⠀⠰⣾⣿⣿⣿⣿⣿⣿⣿⣿⣶⣭⣛⠿⢿⣧⢷⣤⡀⠀⠀⠀⠀⠀			")
-	print("						⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠿⣿⣿⣿⣿⣷⡦⠉⢿⣿⡷⠦⠀⠀⠀				")
-	print("								⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠉⠻⡿⠋⠀⠀⠈⠀⠀⠀⠀⠀⠀				")
-
+    print("                               Tu HP: ",tuhp,"                       ")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣿⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀          	")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀         	")
+    print("							⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀        	")
+    print("							⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⢟⣭⣴⣶⡦⠍⠛⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀        	")
+    print("							⠈⠳⣶⣤⣤⣶⣿⠿⢫⣾⣿⣿⠋⠀⠀⠀⠀⢸⣿⡟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀        	")
+    print("							⠀⠀⠈⠉⠉⠉⠁⣰⣿⣿⣿⠇⠀⢀⣀⣤⣴⣾⣧⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀        	")
+    print("							⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡟⢠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀			")
+    print("							⠀⠀⠀⠀⠀⣠⣿⣿⣿⡟⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀			")
+    print("							⠀⠀⢀⣠⣶⣿⣿⡿⠋⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡷⠀⠀⠀⠀ 		")
+    print("							⠉⠛⠛⠛⠛⠛⠉⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣛⣥⣶⣆⠀⠀⠀		")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⠏⣥⣤⡙⢟⣫⡴⠿⠿⠿⠷⠿⣷⡀⠀			")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⡜⢿⡿⢃⣌⢻⣟⠛⠻⠶⠶⢶⣾⣿⡄			")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⡄⣾⣿⣿⣷⡝⢿⣷⣶⣶⣦⡾⠟⠁			")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣟⣛⣻⠿⠿⢧⢹⣿⣿⣿⣿⣦⡙⢷⡶⠋⠀⠀⠀			")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣝⠻⣿⣿⣛⠷⠌⢿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀			")
+    print("							⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣮⣝⠻⣿⣶⣦⣤⣉⠛⠿⢿⠁⠀⠀⠀⠀⠀			")
+    print("							⠀⠀⠀⠀⠀⠀⠰⣾⣿⣿⣿⣿⣿⣿⣿⣿⣶⣭⣛⠿⢿⣧⢷⣤⡀⠀⠀⠀⠀⠀			")
+    print("						⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠿⣿⣿⣿⣿⣷⡦⠉⢿⣿⡷⠦⠀⠀⠀				")
+    print("								⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠉⠻⡿⠋⠀⠀⠈⠀⠀⠀⠀⠀⠀				")
+    print("\n\n")
 
 from random import randint
 print()
@@ -52,126 +53,88 @@ print("en que dificultad deseas jugar",j)
 print()
 dificultad = int(input("ingrese la dificultad con 1, 2 o 3 "))
 print()
-if 1==dificultad:
-  d1=print("su dificultad es fácil")
+if 1 == dificultad:
+  d1 = print("su dificultad es fácil")
   hp = 1000
-  tuhp=500
-  hpmax=1500
+  tuhp = 500
+  hpmax = 1000
+  tuhpog = 500
 else:
-     if 2==dificultad:
-        d2=print("su dificultad es normal")
+     if 2 == dificultad:
+        d2 = print("su dificultad es normal")
         hp = 5000
-        tuhp=1000
-        hpmax=3000
+        tuhp = 1000
+        hpmax = 1500
+        tuhpog = 1000
      else:
-        if 3==dificultad:
-           d3=print("su dificultad es difícil")
+        if 3 == dificultad:
+           d3 = print("su dificultad es difícil")
         hp = 10000
-        tuhp=5000
-        hpmax=7000
-print(ver_dragon())
+        tuhp = 5000
+        hpmax = 5500
+        tuhpog = 5000
 
-
+turno = 0
 while True:
-  print()
-  print()
-  accion = int(input("que desea hacer selecione atacar(1) o defender(2)"))
-  if accion == 1:
-     #atacar
-        print()
-        print()
-        lanzar= int(input("lanzar dado con (1)"))
-        if lanzar == 1:
-           cifra = randint(1,12)
-           if cifra == 1:
-              print("no atacas")
-           elif cifra == 2:
-              danio = randint(50,100)
-              hp = hp-danio
-              print("usted hará ", danio)
-              print(ver_dragon())
-           elif cifra == 3:
-              danio=randint(50,100)
-              hp=hp-danio
-              tuhp=tuhp-danio
-              print("usted hará y se hara  ", danio)
-              print(ver_dragon())
-           elif cifra == 4:
-              danio1=randint(50,100)
-              danio2=randint(50,100)
-              danio=danio1+danio2
-              hp=hp-danio
-              print("usted hará ",danio)
-              print(ver_dragon())
-           elif cifra == 5:
-              print("no atacas")
-           elif cifra == 6:
-              d2 = randint(50, 100)
-              danio = d2 * 2
-              hp = hp - danio
-              print("usted hará ", danio)
-              print(ver_dragon())
-           elif cifra == 7:
-              danio=randint(50,100)
-              if danio >= 65 :
-                 print("usted hará ", danio)
-                 hp=hp-danio
-                 print(ver_dragon())
-              else:
-                 print("no atacas")
-           elif cifra == 8:
-              d2= randint(50,100)
-              danio=d2*4
-              hp=hp-danio
-              print("usted hará ", danio)
-              print(ver_dragon())
-           elif cifra == 9:
-              danio = randint(100, 200)
-              hp = hp - danio
-              tuhp = tuhp - danio
-              print("usted hará y se hara  ", danio)
-              print(ver_dragon())
-           elif cifra == 10:
-              d1=randint(10,20)
-              danio=d1**2
-              hp=hp-danio
-              print("usted hará ", danio)
-              print(ver_dragon())
-           elif cifra == 11:
-              danio=randint(50,100)
-              if danio <= 65 :
-                 print("usted hará ", danio)
-                 hp=hp-danio
-                 print(ver_dragon())
-              else:
-                 print("no atacas")
-           elif cifra == 12:
-              print("no atacas")
+    danio = randint(100, 250)
+    turno = turno + 1
+    turnofin = turno % 2
+    print(turno)
 
-        if hp <= 0: break
-  elif accion == 2:
-     #defender
-        danio=0
-        print()
-        print()
-        lanzar = int(input("lanzar dado con (1)"))
-        if lanzar == 1:
-           cifra = randint(1,5)
-           if cifra == 1:
-              tuhp=tuhp+danio
-              print("usted no recibe danio ")
-           elif cifra == 2:
-              hp = hp
-              print("le regresas el danio")
-           elif cifra == 3:
-              if tuhp >= hpmax:
-                 print("usted no puede sumar más vida")
-              else:
-                 print("usted consigue 500 de vida")
-                 print(tuhp + 500)
-           elif cifra == 4:
-              hp = hp
-              print("le regresas el danio")
-           elif cifra == 5:
-              tuhp = tuhp + danio
-              print("usted no recibe danio ")
+    if tuhp == tuhpog:
+        accion = int(input("(1)atacar"))
+        if accion == 1:
+            hp = hp - danio
+            print(ver_dragon())
+
+    elif turnofin == 0:
+        accion = int(input("(1)atacar,(2)curarse,(3)golpe critico"))
+        if accion == 1:
+            hp = hp - danio
+            print(ver_dragon())
+            tuhp = tuhp - 500
+        elif accion == 2:
+            if tuhp > hpmax:
+                hpfin = hpmax - tuhp
+                tuhp = tuhp + hpfin
+                print("usted tiene la cantidad maxima de vida ")
+            else:
+                tuhp = tuhp + 500
+                print("usted se curo 500 de vida")
+        elif accion == 3:
+            danio = danio*2
+            hp = hp-danio
+            print("usted hace un golpe critico")
+            print(ver_dragon())
+
+    elif tuhp < hpmax or tuhp < tuhpog:
+        accion = int(input("(1)atacar,(2)curarse"))
+        if accion == 1:
+            hp = hp - danio
+            print(ver_dragon())
+            tuhp = tuhp - 500
+        elif accion == 2:
+            if tuhp > hpmax:
+                hpfin = hpmax - tuhp
+                tuhp = tuhp + hpfin
+                print("usted tiene la cantidad maxima de vida ")
+            else:
+                tuhp = tuhp + 500
+                print("usted se curo 500 de vida")
+
+    elif tuhp >= hpmax and turnofin == 0:
+        accion = int(input("(1)atacar,(2)golpe critico"))
+        if accion == 1:
+            hp = hp - danio
+            print(ver_dragon())
+        elif accion == 2:
+            danio = danio * 2
+            hp = hp - danio
+            print("usted hace un golpe critico")
+            print(ver_dragon())
+
+    print("el dragon te atacara")
+    tuhp = tuhp-150
+    print(ver_caballero())
+    if tuhp <= 0 or hp <= 0:
+        break
