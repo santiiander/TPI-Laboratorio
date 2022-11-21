@@ -1,3 +1,4 @@
+from random import randint
 def ver_dragon():
     print(          "                                   HP:", hp, "                              	")
     print(	        "			⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣤⡼⠀⢀⡀⣀⢱⡄⡀⠀⠀⠀⢲⣤⣤⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀          	")
@@ -41,7 +42,6 @@ def ver_caballero():
     print("								⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠉⠻⡿⠋⠀⠀⠈⠀⠀⠀⠀⠀⠀				")
     print("\n\n")
 
-from random import randint
 print()
 print("bienvenido jugador")
 print()
@@ -63,7 +63,7 @@ else:
      if 2 == dificultad:
         d2 = print("su dificultad es normal")
         hp = 5000
-        tuhp = 1000
+        tuhp = 1000                                    #cambiar los else por elif, mala práctica
         hpmax = 1500
         tuhpog = 1000
      else:
@@ -75,6 +75,7 @@ else:
         tuhpog = 5000
 
 turno = 0
+
 while True:
     danio = randint(100, 250)
     turno = turno + 1

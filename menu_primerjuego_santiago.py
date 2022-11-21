@@ -13,9 +13,6 @@ while menu == 0:
     menu = int(input())
 
     while menu == 1:
-        contadorproblema = 0
-        randominvader = 0
-        probabilidadinvader = random.randint(1, 2)
         print("Bienvenido a Adivina el número")
         dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
 
@@ -29,20 +26,6 @@ while menu == 0:
         print("Tendrás que adivinar el numero generado aleatoriamente, o ingresado por el usuario ")
 
         inputnumero = int(input("Por favor, ingrese 1 si desea que el numero sea aleatorio, 0 si desea ingresarlo "))
-        if probabilidadinvader == 1:
-            print("Oh no!, un invader se metió en el programa ;)")
-            print("      ____       ")
-            print('     /___/\_                   ')
-            print("    _\   \/_/\__                ")
-            print("  __\       \/_/\               ")
-            print("  \   __    __ \ \               ")
-            print(" __\  \_\   \_\ \ \   __      ")
-            print("\_\/_\__\/\__\/\__\/_\_\/   ")
-            print("   \_\/_/\       /_\_\/  ")
-            print("      \_\/       \_\/  ")
-
-            print("Hay una probabilidad de que el invader te quite o agregue una vida!")
-            randominvader = random.randint(1, 2)
 
         if inputnumero == 1:
             print("El número se generará aleatoriamente ")
@@ -91,20 +74,7 @@ while menu == 0:
                 if numentrada != numero:
                     vidas -= 1
 
-            if vidas == 3 and contadorproblema == 0:
-
-                if probabilidadinvader == 1:
-
-                    if randominvader == 1:
-                        vidas -= 1
-                        print("El invader se metió en el código y te robó 1 vida! 💔 ")
-
-                    else:
-                        vidas += 1
-                        contadorproblema += 1
-                        print("El invader se metió en el código y te evitó perder 1 vida! ❤ ")
-
-            while vidas > 0 and vidas < 7 and numentrada != numero and randominvader != 2:
+            while vidas > 0 and vidas < 7 and numentrada != numero:
                 vidas -= 1
                 print("Oh, una vida menos :( , prueba de nuevo")
                 numentrada = int(input())
