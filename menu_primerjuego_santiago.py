@@ -67,13 +67,6 @@ while menu == 0:
 
         numentrada=int(input("Intentemoslo!\n"))
 
-        if numentrada!=numero:
-            vidas-=1
-        else:
-            print("Numero correcto!")
-            print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-            menu = int(input())
-
         while vidas > 0 and numero!=numentrada:
             numentrada=int(input("Oh, una vida menos :( , prueba de nuevo\n"))
             vidas-=1
@@ -86,6 +79,7 @@ while menu == 0:
             if vidas == 2 and digits == 1:
                 print("Lo siento, no puedo revelarte la cantidad de digitos")
                 print("Pero puedo decirte que tu numero se encuentra entre el 0 y el 9")
+
         if numentrada==numero:
             print("Numero correcto!")
             print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
