@@ -3,7 +3,6 @@ import math
 import random
 menu = 0
 while menu == 0:
-
     print("Hola!, Bienvenido al algoritmo de Play.In, desarrollado para aprender jugando")
     print("Por favor, seleccione el número correspondiente al juego o actividad")
     print("1) Adivina el numero")
@@ -13,88 +12,8 @@ while menu == 0:
     print("5) Salir")
     menu = int(input())
 
-
-    while menu == 1:
-        print("Bienvenido a Adivina el número")
-        dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
-
-        if dificultadjuego1 == 1:
-            vidas = 7
-        elif dificultadjuego1 == 2:
-            vidas = 6
-        elif dificultadjuego1 == 3:
-            vidas = 5
-        else:
-            while dificultadjuego1!=1 and dificultadjuego1!=2 and dificultadjuego1!=3:
-                dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
-
-        print("Tendrás que adivinar el numero generado aleatoriamente, o ingresado por el usuario ")
-
-        inputnumero = int(input("Por favor, ingrese 1 si desea que el numero sea aleatorio, 0 si desea ingresarlo "))
-
-        if inputnumero == 1:
-            print("El número se generará aleatoriamente ")
-            if dificultadjuego1 == 1:
-                numero = random.randint(0, 100)  # Dificultad 1 = 7 vidas
-            if dificultadjuego1 == 2:
-                numero = random.randint(0, 500)  # Dificultad 2 = 6 vidas
-            if dificultadjuego1 == 3:
-                numero = random.randint(0, 1000)  # Dificultad 3 = 5 vidas
-
-        else:
-            numero = int(input("El numero será elegido por el otro jugador: "))
-            print("\n"*15)
-            while dificultadjuego1 == 1 and numero > 100:
-                print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
-                numero = int(input("El numero será elegido por el otro jugador: "))
-                print("\n" * 10)
-            while dificultadjuego1 == 2 and 100 > numero < 500:
-                print("La dificultad fue seteada en nivel 2, el numero no puede ser menor que 100 ni mayor que 500: ")
-                numero = int(input("El numero será elegido por el otro jugador: "))
-                print("\n" * 10)
-            while dificultadjuego1 == 3 and 500 > numero < 1000:
-                print("La dificultad fue seteada en nivel 3, el numero no puede ser menor que 100 ni mayor que 1000: ")
-                numero = int(input("El numero será elegido por el otro jugador: "))
-                print("\n" * 10)
-
-        if numero > 0:
-            digits = int(math.log10(numero)) + 1
-            print("El numero tiene", digits, "digitos!")
-        else:
-            if numero == 0:
-                digits = 1
-                print("El numero tiene", digits, "digitos!")
-
-        primerdigito = int(str(numero)[0])
-
-        numentrada=int(input("Intentemoslo!\n"))
-
-        while vidas > 0 and numero!=numentrada:
-            numentrada=int(input("Oh, una vida menos :( , prueba de nuevo\n"))
-            vidas-=1
-
-            if vidas == 2 and digits > 1:
-                print("Veo que ya solo te quedan 2 intentos D:")
-                print("Voy a darte una pista...")
-                print("El numero empieza con", primerdigito)
-
-            if vidas == 2 and digits == 1:
-                print("Lo siento, no puedo revelarte la cantidad de digitos")
-                print("Pero puedo decirte que tu numero se encuentra entre el 0 y el 9")
-
-        if numentrada==numero:
-            print("Numero correcto!")
-            print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-            menu = int(input())
-
-        if vidas == 0:
-            print("Lo siento! perdiste :(")
-            print("El numero era", numero)
-            print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-            menu = int(input())
-
-while menu==2:
-    rtac=0
+while menu == 2:
+    rtac = 0
     print("Bienvenidos a Trivia Sports Mundial")
     print("¿Capaz de lograr el maximo puntaje? Elije tu dificultad. Cada respuesta correcta son 10 puntos...Comenzemos")
     print("Para dificultad Amateur ingrese 1")
@@ -210,7 +129,7 @@ while menu==2:
         print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
         if rtac == 70:
             print("llegaste al puntaje maximo, felicitaciones")
-        menu=int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
+        menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
 
     while dificultadjuego2 == 2:
         print("----------primera pregunta----------")
@@ -289,7 +208,8 @@ while menu==2:
             print("respuesta incorrecta")
             rtac += 0
         print("----------sexta pregunta----------")
-        print("En el Mundial de México en 1986, el argentino Diego Maradona anotó un gol con la mano, que se convirtió en una leyenda en el fútbol y es conocido como “la mano de Dios”. ¿Contra qué equipo marcó ese famoso tanto?")
+        print(
+            "En el Mundial de México en 1986, el argentino Diego Maradona anotó un gol con la mano, que se convirtió en una leyenda en el fútbol y es conocido como “la mano de Dios”. ¿Contra qué equipo marcó ese famoso tanto?")
         print("1) Francia")
         print("2) Brasil")
         print("3) Alemania")
@@ -450,32 +370,44 @@ while menu==2:
         menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
 
 while menu == 3:
-    def nometal(): print("es un no metal")
-    def metal(): print("es un metal")
-    def semimetal(): print("es un semi metal")
-    def desconocido(): print("su capacidad de conduccion electrica es aun desconocida")
+    def nometal():
+        print("es un no metal")
+
+
+    def metal():
+        print("es un metal")
+
+
+    def semimetal():
+        print("es un semi metal")
+
+
+    def desconocido():
+        print("su capacidad de conduccion electrica es aun desconocida")
+
+
     def intentos(atomo):
-        vidas=3
+        vidas = 3
         guess = str.lower(input())
         if guess == atomo:
             print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
             menu = int(input())
         elif guess != atomo:
             vidas = vidas - 1
-            if 0<element<5 or 10<element<13 or 18<element<21 or 36<element<39 or 54<element<57 or 86<element<89:
+            if 0 < element < 5 or 10 < element < 13 or 18 < element < 21 or 36 < element < 39 or 54 < element < 57 or 86 < element < 89:
                 print("se encuentra en el bloque S")
-            if 4<element<11 or 12<element<19 or 30<element<37 or 48<element<55 or 80<element<87 or 112<element<119:
+            if 4 < element < 11 or 12 < element < 19 or 30 < element < 37 or 48 < element < 55 or 80 < element < 87 or 112 < element < 119:
                 print("se encuentra en el bloque P")
-            if 20<element<31 or 38<element<49 or 70<element<81 or 103<element<113:
+            if 20 < element < 31 or 38 < element < 49 or 70 < element < 81 or 103 < element < 113:
                 print("se encuentra en el bloque D")
-            if 56<element<71 or 88<element<103:
+            if 56 < element < 71 or 88 < element < 103:
                 print("se encuentra en el bloque F")
         while 0 < vidas < 3:
             vidas = vidas - 1
             guess = str.lower(input())
             if vidas > 0:
                 if guess != atomo:
-                    print("su cantidad de electrones es de:",element)
+                    print("su cantidad de electrones es de:", element)
             if guess == atomo:
                 print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
                 menu = int(input())
@@ -483,15 +415,18 @@ while menu == 3:
             if vidas == 0:
                 print("te quedaste sin intentos, a estudiar")
                 menu = int(input())
-    print("usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
-    vidas=3
+
+
+    print(
+        "usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
+    vidas = 3
     element = random.randint(1, 118)
     if element == 1:
-        atomo="hidrogeno"
-        nometal(),intentos(atomo)
+        atomo = "hidrogeno"
+        nometal(), intentos(atomo)
     if element == 2:
-        atomo="helio"
-        nometal(),intentos(atomo)
+        atomo = "helio"
+        nometal(), intentos(atomo)
     if element == 3:
         atomo = "litio"
         metal(), intentos(atomo)
@@ -841,6 +776,6 @@ while menu == 3:
         atomo = ("organeson")
         desconocido(), intentos(atomo)
 
-while menu==5:
+while menu == 5:
     print("Gracias por jugar!")
     break
