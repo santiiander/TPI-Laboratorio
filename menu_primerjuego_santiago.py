@@ -38,7 +38,7 @@ while menu == 0:
 
         else:
             numero = int(input("El numero será elegido por el otro jugador: "))
-            print("\n"*15)
+            print("\n" * 15)
             while dificultadjuego1 == 1 and numero > 100:
                 print("La dificultad fue seteada en nivel 1, el numero no puede superar el 100: ")
                 numero = int(input("El numero será elegido por el otro jugador: "))
@@ -74,7 +74,7 @@ while menu == 0:
                 if numentrada != numero:
                     vidas -= 1
 
-            while vidas > 0 and vidas < 7 and numentrada != numero :
+            while vidas > 0 and vidas < 7 and numentrada != numero:
                 vidas -= 1
                 print("Oh, una vida menos :( , prueba de nuevo")
                 numentrada = int(input())
