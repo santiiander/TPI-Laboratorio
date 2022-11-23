@@ -8,11 +8,11 @@ while menu == 1:
     dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
 
     if dificultadjuego1 == 1:
-        vidas = 7
-    elif dificultadjuego1 == 2:
         vidas = 6
-    elif dificultadjuego1 == 3:
+    elif dificultadjuego1 == 2:
         vidas = 5
+    elif dificultadjuego1 == 3:
+        vidas = 4
     else:
         while dificultadjuego1 != 1 and dificultadjuego1 != 2 and dificultadjuego1 != 3:
             dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
@@ -64,21 +64,26 @@ while menu == 1:
 
         if vidas == 2 and digits > 1:
             print("Veo que ya solo te quedan 2 intentos D:")
-            print("Voy a darte una pista...")
+            print("Voy a darte una pista mas...")
             print("El numero empieza con", primerdigito)
 
         if vidas == 2 and digits == 1:
             print("Lo siento, no puedo revelarte la cantidad de digitos")
             print("Pero puedo decirte que tu numero se encuentra entre el 0 y el 9")
 
+        if vidas == 3:
+            print("Voy a ofrecerte una ayuda extra")
+            if numero % 2 == 0:
+                print("El número es par")
+            else:
+                print("El número es impar")
+
     if numentrada == numero:
         vidas += 1
         print("Numero correcto!")
-        print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-        menu = int(input())
+        menu=int(input("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: "))
 
     if vidas == 0:
         print("Lo siento! perdiste :(")
         print("El numero era", numero)
-        print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-        menu = int(input())
+        menu=int(input("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: "))
