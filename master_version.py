@@ -11,6 +11,7 @@ while menu == 0:
     print("4) Medieval History")
     print("5) Salir")
     menu = int(input())
+
 while menu == 1:
     print("Bienvenido a Adivina el número")
     dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
@@ -82,14 +83,14 @@ while menu == 1:
     if numentrada == numero:
         vidas += 1
         print("Numero correcto!")
-        print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-        menu = int(input())
+        menu=int(input("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: "))
 
     if vidas == 0:
         print("Lo siento! perdiste :(")
         print("El numero era", numero)
-        print("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: ")
-        menu = int(input())
+        menu=int(input("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: "))
+
+
 
 while menu == 2:
     rtac = 0
