@@ -215,7 +215,8 @@ while True:
             print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
             if rtac == 70:
                 print("llegaste al puntaje maximo, felicitaciones")
-            menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
+            break
+        menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
 
         while dificultadjuego2 == 2:
             print("----------primera pregunta----------")
@@ -476,8 +477,8 @@ while True:
             vidas = 3
             guess = str.lower(input())
             if guess == atomo:
-                print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
-                menu = int(input())
+                print("¡CORRECTO!")
+                return
             elif guess != atomo:
                 vidas = vidas - 1
                 if 0 < element < 5 or 10 < element < 13 or 18 < element < 21 or 36 < element < 39 or 54 < element < 57 or 86 < element < 89:
@@ -495,12 +496,11 @@ while True:
                     if guess != atomo:
                         print("su cantidad de electrones es de:", element)
                 if guess == atomo:
-                    print("¡CORRECTO!, si desea jugar de nuevo presione 3, si quiere volver al menu presione 0")
-                    menu = int(input())
+                    print("¡CORRECTO!")
                     break
                 if vidas == 0:
                     print("te quedaste sin intentos, a estudiar")
-                    menu = int(input())
+                    break
 
 
         print(
@@ -861,6 +861,7 @@ while True:
         if element == 118:
             atomo = ("organeson")
             desconocido(), intentos(atomo)
+        menu = int(input("si desea jugar de nuevo presione 3, si quiere volver al menu presione 0"))
 
     while menu == 5:
         print("Gracias por jugar!")
