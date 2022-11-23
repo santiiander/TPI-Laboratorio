@@ -96,18 +96,25 @@ while menu==4:
                 hpdrake -= dmg
                 print("Atacas al dragón")
                 print(ver_dragon())
-        time.sleep(3)
+        time.sleep(1)
         if golpedragon == 1 or golpedragon == 3:
             hpplayer -= dmgdrake
             print("El dragón te atacó")
         print(ver_caballero())
+        if hpdrake<=0 and hpplayer<=0:
+            print("ha sido un empate")
+            print("Puedes reintentar ingresando 4, o volver al menú de juegos con 0: ")
+            menu = int(input())
+            break
 
         if hpdrake <= 0:
             print("Felizidades ",player," has logrado derrotar al dragón!")
             print("Puedes reintentar ingresando 4, o volver al menú de juegos con 0: ")
             menu = int(input())
             break
+
         if hpplayer <= 0:
             print("No has logrado vencer al dragón! Suerte a la próxima")
             print("Puedes reintentar ingresando 4, o volver al menú de juegos con 0: ")
             menu = int(input())
+            break
