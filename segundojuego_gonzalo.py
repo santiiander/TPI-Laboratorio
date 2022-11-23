@@ -1,4 +1,4 @@
-
+menu=2
 while menu==2:
     rtac=0
     print("Bienvenidos a Trivia Sports Mundial")
