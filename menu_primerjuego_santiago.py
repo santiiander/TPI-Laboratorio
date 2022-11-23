@@ -1,7 +1,16 @@
 import math
 import random
 
-menu = 1
+menu = 0
+while menu == 0:
+    print("Hola!, Bienvenido al algoritmo de Play.In, desarrollado para aprender jugando")
+    print("Por favor, seleccione el número correspondiente al juego o actividad")
+    print("1) Adivina el numero")
+    print("2) Trivia Sports Mundial")
+    print("3) Tabla Periodica Quizz")
+    print("4) Medieval History")
+    print("5) Salir")
+    menu = int(input())
 
 while menu == 1:
     print("Bienvenido a Adivina el número")
