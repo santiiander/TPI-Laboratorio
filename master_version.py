@@ -100,28 +100,28 @@ while True:
             print("El numero era", numero)   #si las vidas llegan a 0, pierde y pide una entrada para reintar o volver al menu
             menu=int(input("Puedes reintentar ingresando 1, o volver al menú de juegos con 0: "))
 
-    while menu == 2:
-        rtac = 0
-        print("Bienvenidos a Trivia Sports Mundial")
+    while menu == 2:                          #mientras el usuario haya ingresado 2, se ejecuta el juego Trivia Sports Mundial con un bucle
+        rtac = 0                               #se definde la variable rtac con valor 0
+        print("Bienvenidos a Trivia Sports Mundial")                                           #muestra por pantalla al usuario la bienvenida a este juego
         print("¿Capaz de lograr el maximo puntaje? Elije tu dificultad. Cada respuesta correcta son 10 puntos...Comenzemos")
-        print("Para dificultad Amateur ingrese 1")
+        print("Para dificultad Amateur ingrese 1")                                              #muestra por pantalla al usuario las diferentes dificultades de este juego
         print("Para dificultad Profesional ingrese 2")
         print("Para dificultad Legendario ingrese 3")
-        dificultadjuego2 = int(input("ingrese el numero de la dificultad de la trivia"))
-        while dificultadjuego2 == 1:
+        dificultadjuego2 = int(input("ingrese el numero de la dificultad de la trivia"))        #permitimos al usuario ingresar la dificultad que quiera jugar
+        while dificultadjuego2 == 1:                                                            #si el usuario ingresa 1 la dificultad sera amateur
             print("----------primera pregunta----------")
             print("La Copa del Mundo de 2026 se jugará en tres países diferentes. ¿Puedes elegir la opcion correcta?")
             print("1) argentina,brasil y chile")
-            print("2) eeuu, mexico y canada")
+            print("2) eeuu, mexico y canada")                                                   #mostramos en pantalla la pregunta correspondiente con sus respuestas a elegir
             print("3) italia, francia y españa")
             print("4) australia, nueva zelanda y fiji")
 
-            rta = int(input("ingrese el numero de la opcion correcta"))
-            if rta == 2:
+            rta = int(input("ingrese el numero de la opcion correcta"))            #permitimos al usuario ingresar numero de respuesta seleccionada
+            if rta == 2:                                                     #si la respuesta es el valor de la variable rta se muestra por pantalla que fue la eleccion correcta
                 print("respuesta correcta")
-                rtac += 10
+                rtac += 10                                                  #muestra por pantalla al usuario los puntajes obtenidos acumulandose por respuesta
                 print("Su puntaje:", rtac, "puntos")
-            else:
+            else:                                                           #sino ingresa el valor de la variable rta muestra por pantalla que la eleccion fue incorrecta obteniendo 0 puntos
                 print("respuesta incorrecta")
                 rtac += 0
             print("----------segunda pregunta----------")
@@ -214,11 +214,11 @@ while True:
             else:
                 print("respuesta incorrecta")
                 rtac += 0
-            print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
-            if rtac == 70:
+            print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos") #muestra por pantalla la finalizacion del juego en esta dificultad
+            if rtac == 70:                                                          #si acumunla 70 puntos le indica al usuario el puntaje maximo obtenido
                 print("llegaste al puntaje maximo, felicitaciones")
-            menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
-            break
+            menu = int(input("presione 2 para volver a jugar o 0 para regresar al menu")) #permite al usuario ingresar el 2 para volver a jugar o para regresar al menu presionando 0
+            break                                                                        #corta el bucle while
 
 
         while dificultadjuego2 == 2:
@@ -462,32 +462,32 @@ while True:
             break
 
     while menu == 3:
-        def nometal():
+        def nometal():                                       #funsion que es llamada dependiendo del elemento
             print("es un no metal")
 
 
-        def metal():
+        def metal():                                        #funsion que es llamada dependiendo del elemento
             print("es un metal")
 
 
-        def semimetal():
+        def semimetal():                                    #funsion que es llamada dependiendo del elemento
             print("es un semi metal")
 
 
-        def desconocido():
+        def desconocido():                                 #funsion que es llamada dependiendo del elemento
             print("su capacidad de conduccion electrica es aun desconocida")
 
 
         def intentos(atomo):
-            vidas = 3
+            vidas = 3                                              #al iniciar la funcion se definen las vidas
             guess = str.lower(input())
             if guess == atomo:
-                print("¡CORRECTO!")
-                return
-            elif guess != atomo:
+                print("¡CORRECTO!")                                #si el valor insertado corresponde con la variable se da por finalizado el intento
+                return                                             #termina la funcion y se lo envia al proximo input
+            elif guess != atomo:                                   #si no corresponde con el valor de la variable se inicia la segunda pista y se resta una vida
                 vidas = vidas - 1
                 if 0 < element < 5 or 10 < element < 13 or 18 < element < 21 or 36 < element < 39 or 54 < element < 57 or 86 < element < 89:
-                    print("se encuentra en el bloque S")
+                    print("se encuentra en el bloque S")           #dependiendo del rango del numero en correspondiente al atomo en cuestion se le asigna una pista
                 if 4 < element < 11 or 12 < element < 19 or 30 < element < 37 or 48 < element < 55 or 80 < element < 87 or 112 < element < 119:
                     print("se encuentra en el bloque P")
                 if 20 < element < 31 or 38 < element < 49 or 70 < element < 81 or 103 < element < 113:
@@ -498,12 +498,12 @@ while True:
                 vidas = vidas - 1
                 guess = str.lower(input())
                 if vidas > 0:
-                    if guess != atomo:
+                    if guess != atomo:                   #al llegar a la ultima vida se da la ultima pista basada en el numero correspondiente al atomo en cuestion
                         print("su cantidad de electrones es de:", element)
                 if guess == atomo:
-                    print("¡CORRECTO!")
+                    print("¡CORRECTO!")      #si es correcto finaliza la funcion y salta al proximo input
                     break
-                if vidas == 0:
+                if vidas == 0:              #si se llega a 0 vidas la funcion finaliza y salta al proximo input
                     print("te quedaste sin intentos, a estudiar")
                     break
 
@@ -511,9 +511,9 @@ while True:
         print(
             "usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
         vidas = 3
-        element = random.randint(1, 118)
+        element = random.randint(1, 118)          #se define el elemento mediante un numero al azar
         if element == 1:
-            atomo = "hidrogeno"
+            atomo = "hidrogeno"                   #cada elemento llama a su funcion correspondiente y se le asigna su nombre a la variable atomo
             nometal(), intentos(atomo)
         if element == 2:
             atomo = "helio"
@@ -866,7 +866,7 @@ while True:
         if element == 118:
             atomo = ("organeson")
             desconocido(), intentos(atomo)
-        menu = int(input("si desea jugar de nuevo presione 3, si quiere volver al menu presione 0"))
+        menu = int(input("si desea jugar de nuevo presione 3, si quiere volver al menu presione 0"))   #pregunta si el usario desea reintentar o volver al menu
 
 
     while menu == 4:

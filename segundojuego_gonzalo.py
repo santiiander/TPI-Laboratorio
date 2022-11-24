@@ -1,26 +1,26 @@
 menu=2
-while menu==2:
-    rtac=0
-    print("Bienvenidos a Trivia Sports Mundial")
+while menu==2:   #mientras el usuario haya ingresado 2, se ejecuta el juego Trivia Sports Mundial con un bucle
+    rtac=0       #se definde la variable rtac con valor 0
+    print("Bienvenidos a Trivia Sports Mundial")    #muestra por pantalla al usuario la bienvenida a este juego
     print("¿Capaz de lograr el maximo puntaje? Elije tu dificultad. Cada respuesta correcta son 10 puntos...Comenzemos")
     print("Para dificultad Amateur ingrese 1")
-    print("Para dificultad Profesional ingrese 2")
+    print("Para dificultad Profesional ingrese 2")                     #muestra por pantalla al usuario las diferentes dificultades de este juego
     print("Para dificultad Legendario ingrese 3")
-    dificultadjuego2 = int(input("ingrese el numero de la dificultad de la trivia"))
-    while dificultadjuego2 == 1:
+    dificultadjuego2 = int(input("ingrese el numero de la dificultad de la trivia"))     #permitimos al usuario ingresar la dificultad que quiera jugar
+    while dificultadjuego2 == 1:                                                     #si el usuario ingresa 1 la dificultad sera amateur
         print("----------primera pregunta----------")
         print("La Copa del Mundo de 2026 se jugará en tres países diferentes. ¿Puedes elegir la opcion correcta?")
         print("1) argentina,brasil y chile")
-        print("2) eeuu, mexico y canada")
+        print("2) eeuu, mexico y canada")                    #mostramos en pantalla la pregunta correspondiente con sus respuestas a elegir
         print("3) italia, francia y españa")
         print("4) australia, nueva zelanda y fiji")
 
-        rta = int(input("ingrese el numero de la opcion correcta"))
-        if rta == 2:
+        rta = int(input("ingrese el numero de la opcion correcta"))    #permitimos al usuario ingresar numero de respuesta seleccionada
+        if rta == 2:                                                      #si la respuesta es el valor de la variable rta se muestra por pantalla que fue la eleccion correcta
             print("respuesta correcta")
-            rtac += 10
+            rtac += 10                                                  #muestra por pantalla al usuario los puntajes obtenidos acumulandose por respuesta
             print("Su puntaje:", rtac, "puntos")
-        else:
+        else:                                                           #sino ingresa el valor de la variable rta muestra por pantalla que la eleccion fue incorrecta obteniendo 0 puntos
             print("respuesta incorrecta")
             rtac += 0
         print("----------segunda pregunta----------")
@@ -113,11 +113,11 @@ while menu==2:
         else:
             print("respuesta incorrecta")
             rtac += 0
-        print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos")
-        if rtac == 70:
+        print("hemos finalizado la trivia y su puntaje es de:", rtac, "puntos") #muestra por pantalla la finalizacion del juego en esta dificultad
+        if rtac == 70:                                                           #si acumunla 70 puntos le indica al usuario el puntaje maximo obtenido
             print("llegaste al puntaje maximo, felicitaciones")
-        menu=int(input("presione 2 para volver a jugar o 0 para regresar al menu"))
-
+        menu=int(input("presione 2 para volver a jugar o 0 para regresar al menu")) #permite al usuario ingresar el 2 para volver a jugar o para regresar al menu presionando 0
+        break                                                                        #corta el bucle while
     while dificultadjuego2 == 2:
         print("----------primera pregunta----------")
         print("¿Que seleccion de futbol gano el primer mundial?")
