@@ -999,7 +999,7 @@ while True:
                 print(
                     "Dragon... Uno de los monstruos más temidos en el mundo nacido del odio a los seres vivos con hambre de destrucción y muerte ")
                 print(
-                    "un dragon negro con escamas que parecen hojas afilasdas y unas apariencia que parece muerto, con unas alas destruidas y un ")
+                    "un dragon negro con escamas que parecen hojas afiladas y unas apariencia que parece muerto, con unas alas destruidas y un ")
                 print(
                     "cuerpo completamente lasitmado una bestia con mas de 5000 años que a despertado de sus 1000 años de sueño, para volver a causar ")
                 print(
