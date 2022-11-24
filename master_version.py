@@ -462,32 +462,32 @@ while True:
             break
 
     while menu == 3:
-        def nometal():
+        def nometal():                                       #funsion que es llamada dependiendo del elemento
             print("es un no metal")
 
 
-        def metal():
+        def metal():                                        #funsion que es llamada dependiendo del elemento
             print("es un metal")
 
 
-        def semimetal():
+        def semimetal():                                    #funsion que es llamada dependiendo del elemento
             print("es un semi metal")
 
 
-        def desconocido():
+        def desconocido():                                 #funsion que es llamada dependiendo del elemento
             print("su capacidad de conduccion electrica es aun desconocida")
 
 
         def intentos(atomo):
-            vidas = 3
+            vidas = 3                                              #al iniciar la funcion se definen las vidas
             guess = str.lower(input())
             if guess == atomo:
-                print("¡CORRECTO!")
-                return
-            elif guess != atomo:
+                print("¡CORRECTO!")                                #si el valor insertado corresponde con la variable se da por finalizado el intento
+                return                                             #termina la funcion y se lo envia al proximo input
+            elif guess != atomo:                                   #si no corresponde con el valor de la variable se inicia la segunda pista y se resta una vida
                 vidas = vidas - 1
                 if 0 < element < 5 or 10 < element < 13 or 18 < element < 21 or 36 < element < 39 or 54 < element < 57 or 86 < element < 89:
-                    print("se encuentra en el bloque S")
+                    print("se encuentra en el bloque S")           #dependiendo del rango del numero en correspondiente al atomo en cuestion se le asigna una pista
                 if 4 < element < 11 or 12 < element < 19 or 30 < element < 37 or 48 < element < 55 or 80 < element < 87 or 112 < element < 119:
                     print("se encuentra en el bloque P")
                 if 20 < element < 31 or 38 < element < 49 or 70 < element < 81 or 103 < element < 113:
@@ -498,12 +498,12 @@ while True:
                 vidas = vidas - 1
                 guess = str.lower(input())
                 if vidas > 0:
-                    if guess != atomo:
+                    if guess != atomo:                   #al llegar a la ultima vida se da la ultima pista basada en el numero correspondiente al atomo en cuestion
                         print("su cantidad de electrones es de:", element)
                 if guess == atomo:
-                    print("¡CORRECTO!")
+                    print("¡CORRECTO!")      #si es correcto finaliza la funcion y salta al proximo input
                     break
-                if vidas == 0:
+                if vidas == 0:              #si se llega a 0 vidas la funcion finaliza y salta al proximo input
                     print("te quedaste sin intentos, a estudiar")
                     break
 
@@ -511,9 +511,9 @@ while True:
         print(
             "usted debera adivinar de que elemento se trata usando los datos que se iran otorgando por cada intento hasta un maximo de 3")
         vidas = 3
-        element = random.randint(1, 118)
+        element = random.randint(1, 118)          #se define el elemento mediante un numero al azar
         if element == 1:
-            atomo = "hidrogeno"
+            atomo = "hidrogeno"                   #cada elemento llama a su funcion correspondiente y se le asigna su nombre a la variable atomo
             nometal(), intentos(atomo)
         if element == 2:
             atomo = "helio"
@@ -866,7 +866,7 @@ while True:
         if element == 118:
             atomo = ("organeson")
             desconocido(), intentos(atomo)
-        menu = int(input("si desea jugar de nuevo presione 3, si quiere volver al menu presione 0"))
+        menu = int(input("si desea jugar de nuevo presione 3, si quiere volver al menu presione 0"))   #pregunta si el usario desea reintentar o volver al menu
 
 
     while menu == 4:
