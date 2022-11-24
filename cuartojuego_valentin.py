@@ -115,6 +115,15 @@ while menu==4:
             print("Felizidades ", player, " has logrado derrotar al dragón!")
             print(
                 "Puedes reintentar ingresando 4, o volver al menú de juegos con 0: ")  # volver a jugar el programa o seleccionar otro juego
+            print(
+                "Caballero....En un mundo donde un dragón antiguo está sembrando el caos por donde pase, existe un soldado/a bien formado")
+            print(
+                "con un pelo negro como la oscuridad y unos ojos de color cabe claros que demuestras la fuerza que contiene su alma nacido")
+            print(
+                "en una familia comun con una aspiración de ser el primer caballero de su reino en derrotar a un monstruo que atente con ")
+            print(
+                "el reino en el que reside, con un ímpetu inquebrantable , una determinación infinita y los más importante mucho valor ")
+            print("para enfrentar el caos que causa el dragón")
             menu = int(input())
             break
 
@@ -122,5 +131,13 @@ while menu==4:
             print("No has logrado vencer al dragón! Suerte a la próxima")
             print(
                 "Puedes reintentar ingresando 4, o volver al menú de juegos con 0: ")  # volver a jugar el programa o seleccionar otro juego
+            print(
+                "Dragon... Uno de los monstruos más temidos en el mundo nacido del odio a los seres vivos con hambre de destrucción y muerte ")
+            print(
+                "un dragon negro con escamas que parecen hojas afilasdas y unas apariencia que parece muerto, con unas alas destruidas y un ")
+            print(
+                "cuerpo completamente lasitmado una bestia con mas de 5000 años que a despertado de sus 1000 años de sueño, para volver a causar ")
+            print(
+                "desesperacion y terror en el mundo como lo conoce acabando con todo lo que pueda ver a su paso sin una gota de compasión por todo en el mundo")
             menu = int(input())
             break
