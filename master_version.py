@@ -1001,7 +1001,7 @@ while True:
                 print(
                     "un dragon negro con escamas que parecen hojas afiladas y unas apariencia que parece muerto, con unas alas destruidas y un ")
                 print(
-                    "cuerpo completamente lasitmado una bestia con mas de 5000 años que a despertado de sus 1000 años de sueño, para volver a causar ")
+                    "cuerpo completamente lastimado una bestia con mas de 5000 años que a despertado de sus 1000 años de sueño, para volver a causar ")
                 print(
                     "desesperacion y terror en el mundo como lo conoce acabando con todo lo que pueda ver a su paso sin una gota de compasión por todo en el mundo")
                 menu = int(input())
