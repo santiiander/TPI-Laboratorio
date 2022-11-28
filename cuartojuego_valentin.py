@@ -14,7 +14,7 @@ while menu==4:
         print("                        ⡏⡘⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡥⢄⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⢸                      ")
         print("                         ⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣄⣸⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢨                      ")
         print("                                  ⠀⠀⠀⠀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠈                       ")
-        print("                                ⠀⠀⠀⠀⠀ ⡳⣶⣄. ")
+        print("                                ⠀⠀⠀⠀⠀ ⡳⣶⣄.                                   ")
 
 
     def ver_caballero():  # definimos la forma del caballero
@@ -33,9 +33,10 @@ while menu==4:
     print("El caballero debe derrotar a un dragón para la protección de su reino ")
     player = input(str("Con quien me complace la aventura de hoy: "))  # preguntamos el nombre del jugador
     print("Bienvenido jugador ", player)
-    dificultadjuego4 = int(
-        input(
-            "Ingrese en la dificultad que desea jugar\n(1)fácil\n(2)normal\n(3)difícil\ndificultad:"))  # preguntar qué dificultad desea jugar
+    dificultadjuego4 = int(input("Ingrese en la dificultad que desea jugar\n(1)fácil\n(2)normal\n(3)difícil\ndificultad:"))  # preguntar qué dificultad desea jugar
+
+    while dificultadjuego4 != 1 and dificultadjuego4 != 2 and dificultadjuego4 != 3:  # si lo ingresado no corresponde a 1,2 o 3, pregunta continuamente
+        dificultadjuego4 = int(input("Ingrese en la dificultad que desea jugar\n(1)fácil\n(2)normal\n(3)difícil\ndificultad:"))  # repite asta que elija
 
     if dificultadjuego4 == 1:  # los niveles de dificultad
         hpdrake = 5000
@@ -55,7 +56,7 @@ while menu==4:
     print("cuidado soldado usted solo posee 3 pociones")
 
     pociones = 3
-    time.sleep(5)
+    time.sleep(3)
     while True:
         critico = random.randint(1, 10)
         golpedragon = random.randint(1, 3)
@@ -84,6 +85,8 @@ while menu==4:
 
         if pociones > 0:
             accion = int(input("1) Atacar, (2)curar"))
+            while accion != 1 and accion != 2 :
+                accion = int(input("1) Atacar, (2)curar"))
             if accion == 1:  #el sistema de combate que tienes tu, con curación
                 hpdrake -= dmg
                 print("Atacas al dragón")
@@ -95,6 +98,8 @@ while menu==4:
                 print(ver_caballero())
         else:
             accion = int(input("1) Atacar"))  #el sistema de combate si te quedas sin la condición de curación
+            while accion != 1:
+                accion = int(input("1) Atacar"))
             if accion == 1:
                 hpdrake -= dmg
                 print("Atacas al dragón")
