@@ -17,15 +17,16 @@ while True:
         print("Bienvenido a Adivina el número")
         dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))
 
+        while dificultadjuego1 != 1 and dificultadjuego1 != 2 and dificultadjuego1 != 3:  # si lo ingresado no corresponde a 1,2 o 3, pregunta continuamente
+            dificultadjuego1 = int(input(
+                "Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: "))  # hasta que sea uno de los valores aceptados
+
         if dificultadjuego1 == 1:
             vidas = 6
         elif dificultadjuego1 == 2:  # según lo ingresado para dificultadjuego1, será la dificultad del juego
-            vidas = 5                # siemdo la cantidad de vidas a tener durante el algoritmo
+            vidas = 5  # siemdo la cantidad de vidas a tener durante el algoritmo
         elif dificultadjuego1 == 3:
             vidas = 4
-        else:
-            while dificultadjuego1 != 1 and dificultadjuego1 != 2 and dificultadjuego1 != 3:  # si lo ingresado no corresponde a 1,2 o 3, pregunta continuamente
-                dificultadjuego1 = int(input("Por favor, ingrese la dificultad del juego, sea 1, 2 o 3: ")) # hasta que sea uno de los valores aceptados
 
         print("Tendrás que adivinar el numero generado aleatoriamente, o ingresado por el usuario ")
 
